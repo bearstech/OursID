@@ -1,0 +1,32 @@
+{% extends 'base.html'%}
+{% load i18n %}
+{% block idtab %}class="on"{% endblock idtab %}
+{% block content %}
+
+{% if error %}
+    <h2>{% trans "Error" %}</h2>
+    <p>
+    {% ifequal error "exist" %}{% trans "That identity already exist." %}{% endifequal %}
+    {% ifequal error "notmine" %}{% trans "A user already have that identity." %}{% endifequal %}
+    </p>
+{% else %}
+        <h1 class="user_id"><a href="{% url accountdetail %}">identités</a> : nouvelle identité</h1>
+        <form class="centered-form" enctype="multipart/form-data" method=post action="">{% csrf_token %}
+        <fieldset>
+          <legend>{% trans "Create new identity" %}</legend>
+          <table>
+            {{ idform.as_table }}
+            {{ avaform.as_table }}
+            <tr>
+            <td>
+            </td>
+            <td>
+            <input type="submit" value="{% trans 'Create' %}" />
+            </td>
+            </tr>
+          </table>
+        <p>{% blocktrans %}Note : your avatar will be resized to 100x90 pixels.{% endblocktrans %}</p>
+        </fieldset>
+        </form>
+{% endif %}
+{% endblock content %}

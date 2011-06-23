@@ -1,0 +1,86 @@
+{% load i18n %}{% load cms_utils %}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head {% block profile %}{% endblock profile%}>
+<title>openid.bearstech</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="/media/css/bearstech/img/favicon.ico"/>
+    <link rel="stylesheet" href="/media/css/bearstech/style.css" />
+    <script type="text/javascript" src="/media/js/jquery-1.3.2.js"></script>
+    <script type="text/javascript" src="/media/js/oid.js"></script>
+
+{% block head %}
+{% endblock head%}
+{% if server_xrds_url %}
+<meta http-equiv="X-XRDS-location" content="{{ server_xrds_url }}"/>
+<meta http-equiv="X-Yadis-location" content="{{ server_xrds_url }}"/>
+{% endif %}
+</head>
+
+<body>
+{% block body %}
+    <div id="container">
+        <div id="header">
+            <a href="{% url home %}"><img alt="Logo" src="/media/css/bearstech/img/oidbt.png"/></a>
+            <div id="login">
+            {% block loginbox %}
+            {% if user.is_authenticated %}
+                <span class="user"><a href="{% url accountedit %}">{{ user.email }}</a> | <a href="{% url logout %}">{% trans "Logout" %}</a></span>
+            {% else %}
+                <span class="user"></span>
+                <form method="post" action="{% url login %}">{% csrf_token %}
+                <table>
+                <tr>
+	                <td>
+    	                {{ loginform.email }}
+	                </td>
+	                <td>
+                        <input class="button" type="submit" value="{% trans "Login" %}"/></div>
+	                </td>
+                </tr>
+                <tr>
+	                <td>
+    	                {{ loginform.pw }}
+	                </td>
+	                <td>
+                       <a href="{% url resetform %}">{% trans "Forgot password?" %}</a>
+	                </td>
+                </table>  
+                </form>
+            {% endif %}
+            {% endblock loginbox %}
+            </div>
+        </div>
+{% block nav %}
+    <div class="clear"></div>
+
+    <ul id="nav">
+        <li {% block acctab %}{% endblock acctab %} ><a href="{% url accountedit %}" >{% trans "My account" %}</a></li>
+        <li {% block idtab %}{% endblock idtab %} ><a href="{% url accountdetail %}" >{% trans "My identities" %}</a></li>
+        <li {% block histtab %}{% endblock histtab %} ><a href="{% url accounthistory %}" >{% trans "History" %}</a></li>
+        <li {% block cmstab %}{% endblock cmstab %} ><a href="{% url nolang url="faq" %}" >{% trans "Help" %}</a></li>
+        <li {% block oauthtab %}{% endblock oauthtab %} ><a href="{% url oauth_forwarder:index %}" >{% trans "OAuth forwarding" %}</a></li>
+    </ul>
+{% endblock nav %}
+    <div class="clear"></div>
+
+    <div id="content">
+    {% block content %}
+    {% endblock content %}
+    </div>
+
+    <div class="clear"></div>
+
+
+    <div id="footer">
+            {% menu_bar request.LANGUAGE_CODE "|" %}
+            <p class="admin"><a href="/oidadmin/">admin</a></p>
+            <div id="propulse">
+                {% trans "hosted by" %} <a href="http://www.bearstech.com"><img alt="bearstech" src="/media/css/bearstech/img/bearstech_small.png"/></a>
+            </div>
+    </div>
+    <div class="clear"></div>
+    </div>
+{% endblock body %}
+</body>
+</html>

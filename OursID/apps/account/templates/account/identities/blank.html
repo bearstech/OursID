@@ -1,0 +1,9 @@
+{% extends 'base.html'%}
+{% load i18n %}
+{% block idtab %}class="on"{% endblock idtab %}
+{% block content %}
+
+        <h2>{% trans "Identity" %} {{ userid }} {% trans "does not exist." %}</h2>
+        <p>{% trans "To create it, just :" %} <a href="{% url identcreate userid=userid %}">{% trans "Clic here." %}</a></p>
+
+{% endblock content %}

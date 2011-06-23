@@ -1,0 +1,8 @@
+Django == 1.3
+#PIL >= 1.1.6  # Doesn't install with pip, install it manualy
+python-openid
+-e svn+http://django-mptt.googlecode.com/svn/trunk/
+PyYAML
+django-photologue
+#recaptcha-client # pip can't install...
+xmpppy

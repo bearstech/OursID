@@ -1,0 +1,31 @@
+.. _deploy-djangosite
+
+========================
+Deploy a Django Instance
+========================
+
+With wsgi
+---------
+
+First precise WSGI daemon environement::
+
+    WSGIDaemonProcess <wsgi_instance_name> user=<user> group=<group> threads=100
+    WSGIProcessGroup <wsgi_instance_name>
+
+After, set directories to exclude from WSGI hook::
+
+    Alias /media/admin/ /var/www/yoursite.com/vtenv/path/to/django/admin/media/files
+    Alias /media/ /var/www/yoursite.com/project_name/media/
+    <Directory /var/www/yoursite.com/project_name/media/>
+        Order deny,allow
+        Allow from all
+    </Directory>
+
+Finally, precise WSGI script with::
+
+    WSGIScriptAlias / /var/www/yoursite.com/project_name/deploy/deploy.wsgi
+
+For development server you should add::
+
+    SetEnv DJANGO_MODE development
+

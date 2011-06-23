@@ -1,0 +1,252 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-02-26 15:05+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: forms.py:24
+msgid "TextCHA"
+msgstr ""
+
+#: forms.py:30 forms.py:52 tests.py:391
+msgid "Confirmation incorrect"
+msgstr ""
+
+#: forms.py:45
+msgid "Confirm"
+msgstr ""
+
+#: forms.py:45
+msgid "Type DELETE here to confirm."
+msgstr ""
+
+#: forms.py:49
+msgid "DELETE"
+msgstr ""
+
+#: forms.py:75 forms.py:226 models.py:28
+msgid "Email"
+msgstr ""
+
+#: forms.py:75 forms.py:226
+msgid "A confirmation mail will be sent to your email address."
+msgstr ""
+
+#: forms.py:76 forms.py:227
+msgid "Email confirmation"
+msgstr ""
+
+#: forms.py:76 forms.py:227
+msgid "Please type again your email address here."
+msgstr ""
+
+#: forms.py:77 forms.py:165 forms.py:266
+msgid "Password"
+msgstr ""
+
+#: forms.py:77 forms.py:266
+msgid "Your password."
+msgstr ""
+
+#: forms.py:78 forms.py:267
+msgid "Password confirmation"
+msgstr ""
+
+#: forms.py:78 forms.py:267
+msgid "Please type again your password."
+msgstr ""
+
+#: forms.py:88 forms.py:237 tests.py:209
+msgid "A user with that email already exists."
+msgstr ""
+
+#: forms.py:97 forms.py:246
+msgid "The two email fields didnt corresponds."
+msgstr ""
+
+#: forms.py:107 forms.py:276
+msgid "The two password fields didnt corresponds."
+msgstr ""
+
+#: forms.py:112 models.py:25
+msgid "Username"
+msgstr ""
+
+#: forms.py:112
+msgid "Name of your first openid identity."
+msgstr ""
+
+#: forms.py:126 forms.py:128 tests.py:216
+msgid "A user with that username already exists."
+msgstr ""
+
+#: forms.py:164
+msgid "Email or Username"
+msgstr ""
+
+#: forms.py:164
+msgid "Your Email"
+msgstr ""
+
+#: forms.py:165
+msgid "Your password"
+msgstr ""
+
+#: forms.py:174 forms.py:179 tests.py:66 tests.py:70 tests.py:74 tests.py:78
+#: tests.py:169
+msgid "Email or password incorrect"
+msgstr ""
+
+#: forms.py:177 tests.py:87
+msgid "This user is not active"
+msgstr ""
+
+#: forms.py:184 models.py:24
+msgid "UserID"
+msgstr ""
+
+#: forms.py:192
+msgid "This UserID already exists."
+msgstr ""
+
+#: models.py:10
+msgid "Male"
+msgstr ""
+
+#: models.py:10
+msgid "Female"
+msgstr ""
+
+#: models.py:26
+msgid "First name"
+msgstr ""
+
+#: models.py:27
+msgid "Last name"
+msgstr ""
+
+#: models.py:29
+msgid "Phone"
+msgstr ""
+
+#: models.py:30
+msgid "Date of birth"
+msgstr ""
+
+#: models.py:31
+msgid "Adress"
+msgstr ""
+
+#: models.py:32
+msgid "ZIP Code"
+msgstr ""
+
+#: models.py:33
+msgid "City"
+msgstr ""
+
+#: models.py:34
+msgid "Country"
+msgstr ""
+
+#: models.py:35
+msgid "Gender"
+msgstr ""
+
+#: models.py:36
+msgid "Avatar height"
+msgstr ""
+
+#: models.py:37
+msgid "Avatar width"
+msgstr ""
+
+#: models.py:38
+msgid "Avatar"
+msgstr ""
+
+#: models.py:62
+msgid "Display username?"
+msgstr ""
+
+#: models.py:63
+msgid "Display first name?"
+msgstr ""
+
+#: models.py:64
+msgid "Display last name?"
+msgstr ""
+
+#: models.py:65
+msgid "Display email?"
+msgstr ""
+
+#: models.py:66
+msgid "Display phone?"
+msgstr ""
+
+#: models.py:67
+msgid "Display adress?"
+msgstr ""
+
+#: models.py:68
+msgid "Display ZIP Code?"
+msgstr ""
+
+#: models.py:69
+msgid "Display city?"
+msgstr ""
+
+#: models.py:70
+msgid "Display country?"
+msgstr ""
+
+#: models.py:71
+msgid "Display avatar?"
+msgstr ""
+
+#: models.py:72
+msgid "Display gender?"
+msgstr ""
+
+#: models.py:73
+msgid "Display date of birth?"
+msgstr ""
+
+#: models.py:82
+msgid "Ask"
+msgstr ""
+
+#: models.py:83
+msgid "Answer"
+msgstr ""
+
+#: views.py:24
+msgid "You already have an account."
+msgstr ""
+
+#: views.py:33
+msgid "You already are loggued."
+msgstr ""
+
+#: views.py:257
+msgid "Your password was succesfuly changed."
+msgstr ""
+
+#: views.py:283
+msgid ""
+"Your email was succesfuly changed and you are loggued out, please read the "
+"confirmation email."
+msgstr ""

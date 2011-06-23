@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-27 20:10+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: templates/server/trust.html:10
+#, python-format
+msgid ""
+"The site <tt>%(trustroot)s</tt> has requested verification\n"
+"  of your OpenID."
+msgstr ""
+"Le site <tt>%(trustroot)s</tt> demande votre identité\n"
+"  OpenID."
+
+#: templates/server/trust.html:15
+#, python-format
+msgid ""
+"<p>This request claims to be from %(trustroot)s but I have \n"
+"  determined that <em>it not true</em></p>"
+msgstr ""
+"  Cette requête est annoncée comme venant de %(trustroot)s mais\n"
+"  cela n'est pas vrai."
+
+#: templates/server/trust.html:20
+#, python-format
+msgid ""
+"The site <tt>%(trustroot)s</tt> has requested verification\n"
+"  of your OpenID.  I have failed to reach it and thus cannot vouch for its\n"
+"  authenticity.  Perhaps it is on your local network."
+msgstr ""
+
+#: templates/server/trust.html:25
+#, python-format
+msgid ""
+"The site <tt>%(trustroot)s</tt> has requested verification\n"
+"  of your OpenID.  However, <tt>%(trustroot)s</tt> does not \n"
+"  implement OpenID 2.0's relying party verification mechanism."
+msgstr ""
+"Le site <tt>%(trustroot)s</tt> demande votre identité\n"
+"  OpenID.  Mais, <tt>%(trustroot)s</tt> n'\n"
+"  implémente pas les mécanismes de sécurité d'OpenID 2."
+
+#: templates/server/trust.html:34
+msgid "Requested fields"
+msgstr "Champs requis"
+
+#: templates/server/trust.html:40
+#, python-format
+msgid "Your default identity for this consumer is : %(defaultid.userid)s"
+msgstr "Votre identité par defaut pour ce site est : %(defaultid.userid)s"
+
+#: templates/server/trust.html:43
+msgid "Click here to use it"
+msgstr "Cliquez ici pour l'utiliser"
+
+#: templates/server/trust.html:54
+msgid "Your identity is : "
+msgstr "Votre identité est : "
+
+#: templates/server/trust.html:58
+msgid "Chose your identity to show to relying party"
+msgstr "Choisissez l'identité pour ce site"
+
+#: templates/server/trust.html:65
+msgid "Yes (Allow)"
+msgstr "Autoriser"
+
+#: templates/server/trust.html:66
+msgid "Always trust(Allow)"
+msgstr "Mémoriser (et autoriser)"
+
+#: templates/server/trust.html:67
+msgid "No (Cancel)"
+msgstr "Refuser (Annuler)"
+
+#~ msgid "Date"
+#~ msgstr "Date"
+
+#~ msgid "Host"
+#~ msgstr "Hôte"
+
+#~ msgid "Result"
+#~ msgstr "Resultat"

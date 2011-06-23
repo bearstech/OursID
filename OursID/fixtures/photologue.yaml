@@ -1,0 +1,8 @@
+- fields: {crop: 1, effect: null, height: 100, increment_count: 0, name: admin_thumbnail,
+    pre_cache: 0, quality: 70, upscale: 0, watermark: null, width: 90}
+  model: photologue.photosize
+  pk: 1
+- fields: {crop: 1, effect: null, height: 100, increment_count: 0, name: avatar, pre_cache: 0,
+    quality: 70, upscale: 0, watermark: null, width: 90}
+  model: photologue.photosize
+  pk: 2

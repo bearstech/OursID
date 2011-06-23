@@ -1,0 +1,8 @@
+{% load i18n %}
+       {% for field in form %}
+	<div {% if field.errors %}class="error" {% endif %}>{{ field.errors }}
+              {{ field.label_tag }}<br/>
+              {{ field }}<br/>
+              {% if field.help_text %}<span class="help_text">{{ field.help_text }}</span>{% endif %}
+        </div>
+       {% endfor %}

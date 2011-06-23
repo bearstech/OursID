@@ -1,0 +1,37 @@
+{% extends 'base.html'%}
+{% load i18n %}
+{% block histtab %}class="on"{% endblock histtab %}
+{% block content %}
+<h2>{% trans "History"  %}</h2>
+<p>{% blocktrans %}The history page lists all the OpenID-enabled websites that you visited with yours identies{% endblocktrans %}</p>
+
+{% if history %}
+<table id="history_table">
+<tr class="table_header"><td>{% trans "Date" %}</td><td>{% trans "identity" %}</td><td>{% trans "Host" %}</td><td>{% trans "Result" %}</td></tr>
+
+{% for entry in history.object_list %}
+<tr><td>{{ entry.date }}</td><td>{{ entry.identity }}</td><td>{{ entry.host }}</td><td>{{ entry.auth_result|yesno:"OK,NOK,Error" }}</td></tr>
+{% endfor %}
+</table>
+
+<div class="pagination">
+    <span class="step-links">
+        {% if history.has_previous %}
+            <a href="{% url accounthistorypage page=history.previous_page_number %}">{% trans "previous" %}</a>
+        {% endif %}
+
+        <span class="current">
+        {% blocktrans with history.number as num and history.paginator.num_pages as nump %}Page {{ num }} of {{ nump }}.{% endblocktrans %}
+        </span>
+
+        {% if history.has_next %}
+            <a href="{% url accounthistorypage page=history.next_page_number %}">{% trans "next" %}</a>
+        {% endif %}
+    </span>
+</div>
+
+{% else %}
+<p>{% trans "No history available." %}</p>
+{% endif %}
+
+{% endblock content %}

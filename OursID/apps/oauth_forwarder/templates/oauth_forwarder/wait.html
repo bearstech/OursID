@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+{% load i18n %}
+{% block content %}
+        <script>
+            function getOAuthRequestStatus(){
+                $.getJSON("{% url oauth_forwarder:status %}?url={{ oauth_url|urlencode }}", {}, oAuthRequestStatusCallBack);
+            }
+            
+            function oAuthRequestStatusCallBack(data){
+                if(data.status == 'ok'){
+                    window.location = data.oauth_callback;
+                }else if(data.status == 'refused'){
+                    alert('OAuth process has been cancelled!');
+                }else if(data.status == 'pending'){
+                    window.setTimeout(getOAuthRequestStatus,1000);
+                }
+            }
+            
+            getOAuthRequestStatus();
+        </script>
+        <fieldset>
+            <legend>{% trans "OAuth forwarding" %}</legend>
+            <p>{{ message }}</p>
+        </fieldset>
+{% endblock content %}

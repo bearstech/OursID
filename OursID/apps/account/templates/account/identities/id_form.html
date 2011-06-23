@@ -1,0 +1,13 @@
+{% load i18n %}
+
+<span class="is_public">{% trans "Public ?" %}</span>
+       {% for field in doubleform %}
+       {% with field|first as f1 %}{% with field|last as f2%}
+	<div {% if f1.errors %}class="error" {% endif %}>{{ f1.errors }}
+              {{ f1.label_tag }}<br/>
+              {{ f1 }} {{ f2 }}<br/>
+              {% if f1.help_text %}<span class="help_text">{{ f1.help_text }}</span>{% endif %}
+        </div>
+{% endwith %}
+{% endwith %}
+       {% endfor %}

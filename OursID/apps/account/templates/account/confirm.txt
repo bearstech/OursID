@@ -1,0 +1,11 @@
+Bonjour,
+
+
+Pour confirmer votre inscription sur le site openid veuillez consulter l'adresse
+suivante :
+
+
+{{ proto }}://{{ sname }}{% url confirm code=confirmcode %}
+
+
+

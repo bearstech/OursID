@@ -1,0 +1,240 @@
+[
+  {
+    "pk": 1, 
+    "model": "cms.language", 
+    "fields": {
+      "code": "fr", 
+      "name": "Fran\u00e7ais"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "cms.language", 
+    "fields": {
+      "code": "en", 
+      "name": "English"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "cms.page", 
+    "fields": {
+      "rght": 6, 
+      "redirects": "", 
+      "author": 1, 
+      "parent": null, 
+      "title": "Services", 
+      "folder_type": 0, 
+      "login_required": false, 
+      "created": "2009-10-02 20:12:31", 
+      "lft": 1, 
+      "template": "", 
+      "tree_id": 1, 
+      "publication_date": null, 
+      "publish_state": 0, 
+      "in_navigation": true, 
+      "slug": "services", 
+      "level": 0
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "cms.page", 
+    "fields": {
+      "rght": 2, 
+      "redirects": "", 
+      "author": 1, 
+      "parent": null, 
+      "title": "Politique de confidentialit\u00e9", 
+      "folder_type": 0, 
+      "login_required": false, 
+      "created": "2009-10-02 20:43:36", 
+      "lft": 1, 
+      "template": "", 
+      "tree_id": 2, 
+      "publication_date": null, 
+      "publish_state": 0, 
+      "in_navigation": true, 
+      "slug": "privacy", 
+      "level": 0
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "cms.page", 
+    "fields": {
+      "rght": 2, 
+      "redirects": "", 
+      "author": null, 
+      "parent": null, 
+      "title": "FAQ", 
+      "folder_type": 0, 
+      "login_required": false, 
+      "created": "2009-10-04 08:25:19", 
+      "lft": 1, 
+      "template": "", 
+      "tree_id": 3, 
+      "publication_date": null, 
+      "publish_state": 0, 
+      "in_navigation": true, 
+      "slug": "faq", 
+      "level": 0
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "cms.page", 
+    "fields": {
+      "rght": 2, 
+      "redirects": "", 
+      "author": null, 
+      "parent": null, 
+      "title": "Conditions d'utilisation", 
+      "folder_type": 0, 
+      "login_required": false, 
+      "created": "2009-10-04 13:49:34", 
+      "lft": 1, 
+      "template": "", 
+      "tree_id": 4, 
+      "publication_date": null, 
+      "publish_state": 0, 
+      "in_navigation": true, 
+      "slug": "conditions", 
+      "level": 0
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "cms.page", 
+    "fields": {
+      "rght": 2, 
+      "redirects": "", 
+      "author": 1, 
+      "parent": null, 
+      "title": "Syst\u00e8me de notification", 
+      "folder_type": 0, 
+      "login_required": false, 
+      "created": "2011-05-16 16:42:37", 
+      "lft": 1, 
+      "template": "", 
+      "tree_id": 5, 
+      "publication_date": null, 
+      "publish_state": 0, 
+      "in_navigation": true, 
+      "slug": "notification-service", 
+      "level": 0
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "cms.content", 
+    "fields": {
+      "body": "Bearstech propose un certain nombre de services \u00e0 valeur ajout\u00e9e autour d'OpenID\r\n<ul><li>La cr\u00e9ation de serveurs OpenID en marque blanche</li><li>La mise en place de m\u00e9canismes de Single Sign On bas\u00e9s sur OpenID</li> \r\n<li>L'aide et le conseil pour la mise en place de clients OpenID</li></ul><p>\r\nPour plus de d\u00e9tails, n'h\u00e9sitez pas \u00e0 nous <a href=\"mailto:contact@bearstech.com\">contacter</a>.\r\n</p>", 
+      "slug": "services", 
+      "description": "<br />", 
+      "language": 1, 
+      "title": "Services", 
+      "format": 0, 
+      "creation_date": "2009-10-02 20:13:14", 
+      "page": 1
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "cms.content", 
+    "fields": {
+      "body": "<p>Les informations recueillies font l\u2019objet d\u2019un traitement informatique destin\u00e9 \u00e0 la gestion des diff\u00e9rentes identit\u00e9s. Les destinataires des donn\u00e9es sont : la soci\u00e9t\u00e9 Bearstech.</p><p>\r\nConform\u00e9ment \u00e0 la loi \u00ab informatique et libert\u00e9s \u00bb du 6 janvier 1978 modifi\u00e9e en 2004, vous b\u00e9n\u00e9ficiez d\u2019un droit d\u2019acc\u00e8s et de rectification aux informations qui vous concernent, que vous pouvez exercer en vous adressant \u00e0 Bearstech, 42 bvd Sebastopol, 75003 Paris.\r\n</p><p>\r\nVous pouvez \u00e9galement, pour des motifs l\u00e9gitimes, vous opposer au traitement des donn\u00e9es vous concernant.\r\n</p><p>Les donn\u00e9es stock\u00e9es sur ce site ne seront jamais utilis\u00e9es \u00e0 des fins commerciales (ni par Bearstech ni transmises \u00e0 d'eventuels partenaires commerciaux).</p>", 
+      "slug": "", 
+      "description": "", 
+      "language": 1, 
+      "title": "", 
+      "format": 0, 
+      "creation_date": "2009-10-02 20:44:10", 
+      "page": 2
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "cms.content", 
+    "fields": {
+      "body": "<h2>A quoi sert ce service ?</h2>\r\nCe service vous permet de centraliser votre identit\u00e9 et de vous connecter \u00e0 vos sites favoris sans avoir \u00e0 renseigner \u00e0 chaque fois vos informations confidentielles. \r\n<p>Pour plus d'information sur OpenID, vous pouvez consulter les sites suivants :\r\n<ul>\r\n<li><a href=\"http://www.openidfrance.fr/\">OpenID France</a></li>\r\n<li><a href=\"http://fr.wikipedia.org/wiki/Openid\">la page d\u00e9di\u00e9e \u00e0 OpenID sur wikipedia</a></li>\r\n</ul>\r\n</p>\r\n\r\n<h2>Ce service est-il gratuit?</h2>\r\nOui, ce service est fourni gratuitement par <a href=\"http://www.bearstech.com\">Bearstech</a>.\r\n\r\n<h2>Comment puis-je me d\u00e9sinscrire</h2>\r\nPour vous d\u00e9sinscrire, veuillez envoyer un mail \u00e0 <a href=\"mailto:contact@openid.bearstech.com?subject=unsubscribe\">contact@openid.bearstech.com</a> avec comme sujet \"unsubscribe\" et indiquez dans le corps du courrier votre identifiant.\r\n\r\n<h2>Comment participer activement au service?</h2>\r\nCe service est d\u00e9velopp\u00e9 selon la licence <a href=\"http://www.fsf.org/licensing/licenses/agpl-3.0.html\">agpl v3</a>. Vous pouvez participer activement au d\u00e9veloppement et aux correctifs en allant sur le <a href=\"https://github.com/bearstech/OursID\">site d\u00e9di\u00e9</a> \u00e0 cet effet.\r\n", 
+      "slug": "", 
+      "description": "", 
+      "language": 1, 
+      "title": "Foire Aux Questions", 
+      "format": 0, 
+      "creation_date": "2009-10-04 08:26:47", 
+      "page": 3
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "cms.content", 
+    "fields": {
+      "body": "<p>Ce service est fourni gratuitement et librement par Bearstech. Vous pouvez t\u00e9l\u00e9charger, modifier et diffuser le code source de cette application suivant la <a href=\"http://www.gnu.org/licenses/agpl.html\">license afferoGPL v3</a>. Veuillez vous r\u00e9f\u00e9rer au <a href=\"https://github.com/bearstech/OursID\">site d\u00e9di\u00e9</a> pour acc\u00e9der au code source.</p><p>\r\nEn utilisant ce service, vous vous engagez \u00e0 ne pas l'utiliser \u00e0 des fins commerciales.\r\n</p>", 
+      "slug": "conditions", 
+      "description": "", 
+      "language": 1, 
+      "title": "Conditions d'utilisation", 
+      "format": 0, 
+      "creation_date": "2009-10-04 13:53:33", 
+      "page": 4
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "cms.content", 
+    "fields": {
+      "body": "<p>Le syst\u00e8me de notification permet de confirmer les requ\u00eates OpenID d'authentification sans vous identifier sur notre site Oursid.</p><p>Deux technologies sont actuellement support\u00e9es:\r\n</p><ul><li>Android&#160;&nbsp;-- version 2.1 minimum (API 7)</li></ul><p>L'application Android <a href=\"/media/grizzlid.apk\">GrizzlID</a> permet de g\u00e9rer des requ\u00eates OpenID en attente \u00e0 partir de votre smartphone.&nbsp;Le support des notifications (optionnelles) n\u00e9cessite de poss\u00e9der un syst\u00e8me Android with Google, qui permet les notifications push C2DM. Si votre t\u00e9l\u00e9phone le permet, les notifications Android sont automatiquement activ\u00e9es lorsque vous vous connectez avec l'application.</p><p style=\"text-align:center;\"><a href=\"/media/grizzlid.apk\"><img src=\"/media/css/bearstech/img/grizzlid_qrcode.png\" title=\"T\u00e9l\u00e9charger GrizzlID\" /></a></p><ul><li>Jabber</li></ul><p>Les notifications sont envoy\u00e9es par message Jabber. Il suffit de r\u00e9pondre 'yes' ou 'no' pour accepter ou refuser une requ\u00eate OpenID. Pour activer les notifications Jabber, il faut renseigner son identifiant Jabber dans la rubrique 'Mon compte' ci-dessus.</p><p>Vous pouvez \u00e0 tout moment consulter la configuration des notifications dans la rubrique 'Mon compte' ci-dessus.</p>", 
+      "slug": "notification-service", 
+      "description": "", 
+      "language": 1, 
+      "title": "Syst\u00e8me de notification", 
+      "format": 0, 
+      "creation_date": "2011-05-16 16:49:50", 
+      "page": 5
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "cms.content", 
+    "fields": {
+      "body": "<p>Bearstech offers a number of value-added services around OpenID</p><ul><li>The creation of OpenID servers</li><li>The establishment of mechanisms&#160;Single Sign On&nbsp;based on OpenID</li><li>The help and advice for implementing OpenID clients</li></ul><p>For more details, please <a href=\"mailto:contact@bearstech.com\">contact us</a>.</p>", 
+      "slug": "services", 
+      "description": "<br />", 
+      "language": 2, 
+      "title": "Services", 
+      "format": 0, 
+      "creation_date": "2011-05-17 14:28:11", 
+      "page": 1
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "cms.content", 
+    "fields": {
+      "body": "<p><span id=\"result_box\" lang=\"en\"><span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">This service</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">is</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">provided</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">free of charge</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">and by</span>&#160;<span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">Bearstech</span><span title=\"Cliquer ici pour voir d'autres traductions\">.</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">You</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">can</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">download</span><span title=\"Cliquer ici pour voir d'autres traductions\">, modify</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">and distribute</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">the</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">source code</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">of this application</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">under</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">the</span> <a href=\"http://www.gnu.org/licenses/agpl.html\"><span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">afferoGPL license</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">v3</span></a><span title=\"Cliquer ici pour voir d'autres traductions\">.</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">Please</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">refer</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">to the <a href=\"https://github.com/bearstech/OursID\">dedicated site</a></span><a href=\"https://github.com/bearstech/OursID\"> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">to access</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">the</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">source code</span></a><span title=\"Cliquer ici pour voir d'autres traductions\">.</span></span></p><p><span id=\"result_box\" lang=\"en\"><span title=\"Cliquer ici pour voir d'autres traductions\"><span id=\"result_box\" lang=\"en\"><span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">By using this</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">service</span><span title=\"Cliquer ici pour voir d'autres traductions\">,</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">you</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">agree</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">not to</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">use it</span> <span title=\"Cliquer ici pour voir d'autres traductions\" class=\"hps\">for commercial purposes</span><span title=\"Cliquer ici pour voir d'autres traductions\">.</span></span></span></span></p>", 
+      "slug": "conditions", 
+      "description": "", 
+      "language": 2, 
+      "title": "Terms of Use", 
+      "format": 0, 
+      "creation_date": "2011-05-17 16:41:16", 
+      "page": 4
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "cms.content", 
+    "fields": {
+      "body": "<p>This service is used to confirm OpenID authentication requests without logging in to the website.</p><p>Two technologies are currently supported:\r\n</p><ul><li>Android&#160;&nbsp;-- version 2.1 minimum (API 7)</li></ul><p>The Android <a href=\"/media/grizzlid.apk\">GrizzlID</a>&nbsp;application allows you to manage pending OpenID requests from your phone.<br />Support for notifications (optional) needs to have an \"Android with Google\" device, which allows C2DM push notifications.<br />If your phone supports it, C2DM notifications are automatically enabled when you logon to the GrizzlID application.</p><p style=\"text-align:center;\"><a href=\"/media/grizzlid.apk\"><img src=\"/media/css/bearstech/img/grizzlid_qrcode.png\" title=\"T\u00e9l\u00e9charger GrizzlID\" /></a></p><ul><li>Jabber</li></ul><p>Notifications are sent via Jabber message. Just answer 'yes' or 'no' to accept or refuse an OpenID request.<br />To enable Jabber notifications, you have to set your Jabber ID in the 'My Account ' menu above.</p><p>You can manage notifications settings in the 'My Account ' menu above.</p>", 
+      "slug": "notification-service", 
+      "description": "", 
+      "language": 2, 
+      "title": "Notification service", 
+      "format": 0, 
+      "creation_date": "2011-05-17 16:52:13", 
+      "page": 5
+    }
+  }
+]

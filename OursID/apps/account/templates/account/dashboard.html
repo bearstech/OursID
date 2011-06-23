@@ -1,0 +1,42 @@
+{% extends 'base.html'%}
+{% load i18n %}
+{% block idtab %}class="on"{% endblock idtab %}
+{% block content %}
+<p class="intro-dashboard">{% blocktrans %}
+This page show all your identities. You can modify them. Need Help?{% endblocktrans %} <a href="{% url cmspage lang="fr" url="faq" %}">{% trans "Clic here"%}</a>
+
+
+{% for ident in idents %}
+    <div class="box" id="{{ ident.userid }}">
+        <div class="box_text">
+            <a href="{% url identshow userid=ident.userid %}">{{ ident.userid }}</a>
+        </div>
+        <a href="{% url identshow userid=ident.userid %}"><img src="{{ ident.identityportrait.get_avatar_url|default:"/media/css/bearstech/img/openid-icon-100x100.png" }}" alt=""/></a>
+        <div class="box_text">
+            <p class="box_title">{{ ident.first_name }} {{ ident.last_name }}</p>
+            <p>{{ ident.username }}</p>
+            <p>{{ ident.email }}</p>
+        </div>
+        <div class="button_box">
+            <form name="myform" action="{% url identchange %}" method="POST">{% csrf_token %}
+                <input type="hidden" name="ident" value="{{ ident.userid }}">
+                <input class="button-board" type="submit" name="edit" value="{% trans "Modify" %}">
+               {# <input class="button" type="submit" name="delete" value="{% trans "Delete" %}">#}
+            </form>
+        </div>
+    </div>
+{% endfor %}
+    <div class="box">
+        <div id="last_box">
+        <form class="create_button" name="createform" action="." method="POST">{% csrf_token %}
+        <ul>
+        {{ newidform.as_ul }}
+        <li><input class="button-board" type="submit" value="{% trans "Create new identity" %}">
+        </li>
+        </ul>
+        </form>
+    </div>
+    </div>
+    <div class="clear"></div>
+
+{% endblock content %}

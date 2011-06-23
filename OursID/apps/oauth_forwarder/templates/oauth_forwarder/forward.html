@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+{% load i18n %}
+{% block content %}
+       <form  class="centered-form" method=post action="{% url oauth_forwarder:forward %}?url={{ oauth_url|urlencode }}">{% csrf_token %}
+       <fieldset>
+        <legend>{% trans "OAuth forwarding" %}</legend>
+        {% if messages %}
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        {% endif %}
+        <table>
+        {{ emailform.as_table }}
+        <tr>
+        <td></td>
+        <td>
+          <input type="submit" value="OK" />
+        </td>
+        </tr>
+        </table>
+        <p>{% trans "If you don't have any account you can "%}<a href="{% url accountcreate %}">{% trans "register" %}</a>.</p>
+        </fieldset>
+        </form>
+
+{% endblock content %}

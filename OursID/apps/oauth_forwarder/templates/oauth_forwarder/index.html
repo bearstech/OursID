@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+{% load i18n %}
+{% block content %}
+       <fieldset>
+        <legend>{% trans "OAuth forwarding" %}</legend>
+        <p>{% blocktrans %}To use OAuth forwarding, add the link below to your bookmarks bar:{% endblocktrans %}</p>
+        <p><a href="javascript:(function(){f='http://{{ current_host }}/oauth/forward?url='+encodeURIComponent(window.location.href);a=function(){location.href=f};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})()" >OAuth2Mobile</a></p>
+        <p>{% blocktrans %}On a OAuth 1.0 authentication page, click on this bookmarklet to forward the identification process to your mobile.{% endblocktrans %}</p>
+        <p>{% blocktrans %}You must install the GrizzlID application on your Android phone.{% endblocktrans %}</p>
+        <p><a href="{% url nolang url="notification-service" %}">{% blocktrans %}See this page to download GrizzlID for Android.{% endblocktrans %}</a></p>
+    </fieldset>
+
+{% endblock content %}

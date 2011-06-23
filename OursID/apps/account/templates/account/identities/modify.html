@@ -1,0 +1,26 @@
+{% extends 'base.html'%}
+{% load i18n %}
+{% load doubleform %}
+{% block idtab %}class="on"{% endblock idtab %}
+{% block content %}
+
+{% if error %}
+    <h2>{% trans "Error" %}</h2>
+    <p>
+    {% ifequal error "dontexist" %}{% trans "That identity don't exist, you should : " %}<a href="{% url identcreate userid=userid %}">{% trans "Create this one." %}</a>{% endifequal %}
+    {% ifequal error "notmine" %}{% trans "Is not your Identity" %}{% endifequal %}
+    </p>
+{% else %}
+        <h1 class="user_id"><a href="{% url accountdetail %}">identités</a> : {{ identity }}</h1>
+        <h2></h2>
+        <form enctype="multipart/form-data" method=post action="">{% csrf_token %}
+        <fieldset>
+          <legend>{% trans "Update identity" %}</legend>
+       {% double_form idform idpform %}
+       {% with avaform as form %}{% include "form.html" %}{% endwith %}
+        <p class="validate"><input type="submit" value="{% trans 'Update' %} " /></p>
+        </fieldset>
+        </form>
+<p>{% blocktrans %}Note : your avatar will be resized to 100x90 pixels.{% endblocktrans %}</p>
+{% endif %}
+{% endblock content %}

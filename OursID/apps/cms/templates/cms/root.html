@@ -1,0 +1,11 @@
+{% extends "cms/basecms.html" %}
+{% load i18n %}
+{% block cms_tree %}{% endblock cms_tree %}
+
+{# {% block cms_title %}<h1>CMS Test</h1>{% endblock cms_title%} #}
+
+{% block cms_traductions%}
+    {% if traductions %}{% if not traductions|length_is:"1" %}<ul class="traductions">{% for langs in traductions %}
+    <li><a href="{% url cmsroot lang=langs %}">{{ langs }}</a></li> 
+    {% endfor %}</ul>{% endif %}{% endif %}
+{% endblock cms_traductions%}

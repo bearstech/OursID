@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block head %}
+{% endblock %}
+
+{% block nav %}
+{% endblock nav %}
+
+{% block content %}
+        <div class="homepage_content">
+            <p>
+{%blocktrans %}
+openid.bearstech.com is a <strong>free</strong> (and free as beer) software provided by bearstech.
+You can create and manage multiple identities. This service is OpenID v2 compatible.
+{% endblocktrans %}
+            </p>
+            <br/><p>
+            <img alt="Logo Android" src="/media/css/bearstech/img/Android_robot.png"/>
+            <img alt="Logo Jabber" src="/media/css/bearstech/img/Jabber_logo.png"/>
+            {%blocktrans %}This service allows you to use your identity with your Android phone or your Jabber account.{% endblocktrans %}&nbsp;<a href="{% url nolang url="notification-service" %}" >{% trans "More..." %}</a></p>
+            <br/><p>
+                <img alt="Logo OAuth" src="/media/css/bearstech/img/oauth.png"/>
+            {% blocktrans %}Use this service to forward OAuth request to your Android phone.{% endblocktrans %}&nbsp;<a href="{% url oauth_forwarder:index %}">{% trans "More..." %}</a></p>
+        </div>  
+        <div id="subscribe_box">
+            <div class="header">
+                <h3>{% trans "To register, fill in the registration form below"%}</h3>
+            </div>
+            <form method="post" action="{% url accountcreate %}">{% csrf_token %}
+            <table>
+                {{ form.as_table }}
+            </table>
+            <input type="hidden" name="{{ step_field }}" value="{{ step0 }}" />
+            {{ previous_fields|safe }}
+            <input class="button" type="submit" value="{% trans "Next" %}">
+            </form>
+            <div class="footer">
+                <p>{% trans "By clicking register, you acknowledge that you have read and agree to" %} <a href="{% url nolang url="conditions" %}">{% trans "Terms of Use" %}</a> {% trans "and the" %} <a href="{% url nolang url="privacy" %}">{% trans "Privacy Policy" %}</a>.</p>
+            </div>
+        </div>                 
+{% endblock %}

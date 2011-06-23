@@ -1,0 +1,588 @@
+# Oursid's account language File.
+# Copyright (C) 2008 Bearstech
+# This file is distributed under the same license as the Oursid package.
+# Bearstech <contact@bearstech.com>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-10-04 20:15+0200\n"
+"PO-Revision-Date: 2009-02-26 15:42+0100\n"
+"Last-Translator: John Lejeune <jlejeune@bearstech.com>\n"
+"Language-Team: FR <jlejeune@bearstech.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: forms.py:47 templates/account/identities/delete.html:22
+msgid "Confirm"
+msgstr "Confirmer"
+
+#: forms.py:47
+msgid "Type DELETE here to confirm."
+msgstr "Taper SUPPRIMER pour confirmer."
+
+#: forms.py:51
+msgid "DELETE"
+msgstr "SUPPRIMER"
+
+#: forms.py:54
+msgid "Confirmation incorrect"
+msgstr "Confirmation incorrecte"
+
+#: forms.py:77 forms.py:348 models.py:75
+#: templates/account/identities/list.html:11
+#: templates/account/identities/show.html:25
+msgid "Email"
+msgstr "Email"
+
+#: forms.py:77 forms.py:348
+msgid "A confirmation mail will be sent to your email address."
+msgstr "Un courrier de confirmation sera envoyé à votre adresse mail."
+
+#: forms.py:78 forms.py:349
+msgid "Email confirmation"
+msgstr "Confirmation du mail"
+
+#: forms.py:78 forms.py:349
+msgid "Please type again your email address here."
+msgstr "Saisissez à nouveau votre adresse mail."
+
+#: forms.py:79 forms.py:287 forms.py:388
+msgid "Password"
+msgstr "Mot de passe"
+
+#: forms.py:79 forms.py:388
+msgid "Your password."
+msgstr "Votre mot de passe."
+
+#: forms.py:80 forms.py:389
+msgid "Password confirmation"
+msgstr "Confirmation du mot de passe"
+
+#: forms.py:80 forms.py:389
+msgid "Please type again your password."
+msgstr "Saisissez à nouveau votre mot de passe."
+
+#: forms.py:90 forms.py:359
+msgid "A user with that email already exists."
+msgstr "Un utilisateur avec ce mail existe déjà."
+
+#: forms.py:101 forms.py:368
+msgid "The two email fields didnt corresponds."
+msgstr "Les champs de saisie des mails ne correspondent pas."
+
+#: forms.py:111 forms.py:398
+msgid "The two password fields didnt corresponds."
+msgstr "Les champs de saisie des mots de passe ne correspondent pas."
+
+#: forms.py:116 models.py:72 templates/account/identities/list.html:10
+#: templates/account/identities/show.html:22
+msgid "Username"
+msgstr "Pseudo"
+
+#: forms.py:116
+msgid "Name of your first openid identity."
+msgstr ""
+"Merci de choisir une identité initiale (équivalent à un pseudo), vous "
+"pourrez d'ailleurs en avoir plusieurs. "
+
+#: forms.py:130 forms.py:132
+msgid "A user with that username already exists."
+msgstr "Cette identité est déjà prise, veuillez en choisir une autre."
+
+#: forms.py:286
+msgid "Email or Username"
+msgstr "Mail ou Pseudo"
+
+#: forms.py:286
+msgid "Your Email"
+msgstr "Votre mail"
+
+#: forms.py:296 forms.py:301 tests.py:46 tests.py:50 tests.py:54 tests.py:58
+#: tests.py:154
+msgid "Email or password incorrect"
+msgstr "Mail ou mot de passe incorrect"
+
+#: forms.py:299 tests.py:67
+msgid "This user is not active"
+msgstr "Cet utilisateur n'est pas activé"
+
+#: forms.py:306 models.py:71
+msgid "UserID"
+msgstr "UserID"
+
+#: forms.py:314
+msgid "This UserID already exists."
+msgstr "Cet identifiant existe déjà."
+
+#: forms.py:441
+msgid "Invalid public key"
+msgstr "Clef publique invalide"
+
+#: forms.py:442
+msgid "Invalid private key"
+msgstr "Clef privée invalide"
+
+#: forms.py:443
+msgid "Invalid cookie"
+msgstr "Cookie invalide"
+
+#: forms.py:444
+msgid "Invalid entry, please try again."
+msgstr "Erreur de saisie, veuillez recommencer."
+
+#: forms.py:445
+msgid ""
+"The parameters to verify were incorrect, make sure you are passing all the "
+"required parameters."
+msgstr ""
+
+#: forms.py:446
+msgid "Invalid referrer domain"
+msgstr ""
+
+#: forms.py:447
+msgid "Could not contact reCAPTCHA server"
+msgstr "Serveur reCAPTCHA injoignable"
+
+#: models.py:11
+msgid "Male"
+msgstr "Masculin"
+
+#: models.py:11
+msgid "Female"
+msgstr "Féminin"
+
+#: models.py:16
+msgid "Confirm code"
+msgstr "Code de confirmation"
+
+#: models.py:54
+msgid "OPENID : confirmation"
+msgstr "OPENID : confirmation"
+
+#: models.py:73 templates/account/identities/list.html:12
+#: templates/account/identities/show.html:23
+msgid "First name"
+msgstr "Prénom"
+
+#: models.py:74 templates/account/identities/list.html:13
+#: templates/account/identities/show.html:24
+msgid "Last name"
+msgstr "Nom"
+
+#: models.py:76 templates/account/identities/list.html:14
+#: templates/account/identities/show.html:26
+msgid "Phone"
+msgstr "Téléphone"
+
+#: models.py:77
+msgid "Date of birth"
+msgstr "Date de naissance"
+
+#: models.py:78 templates/account/identities/list.html:15
+#: templates/account/identities/show.html:27
+msgid "Adress"
+msgstr "Adresse"
+
+#: models.py:79
+msgid "ZIP Code"
+msgstr "Code postal"
+
+#: models.py:80 templates/account/identities/list.html:17
+#: templates/account/identities/show.html:28
+msgid "City"
+msgstr "Ville"
+
+#: models.py:81 templates/account/identities/list.html:18
+#: templates/account/identities/show.html:30
+msgid "Country"
+msgstr "Pays"
+
+#: models.py:82
+msgid "Gender"
+msgstr "Sexe"
+
+#: models.py:84
+msgid "Is Active?"
+msgstr ""
+
+#: models.py:106
+msgid "Display username?"
+msgstr "Afficher le pseudo ?"
+
+#: models.py:107
+msgid "Display first name?"
+msgstr "Afficher le nom ?"
+
+#: models.py:108
+msgid "Display last name?"
+msgstr "Afficher le prénom ?"
+
+#: models.py:109
+msgid "Display email?"
+msgstr "Afficher le mail ?"
+
+#: models.py:110
+msgid "Display phone?"
+msgstr "Afficher le téléphone ?"
+
+#: models.py:111
+msgid "Display adress?"
+msgstr "Afficher l'adresse ?"
+
+#: models.py:112
+msgid "Display ZIP Code?"
+msgstr "Afficher le code postal ?"
+
+#: models.py:113
+msgid "Display city?"
+msgstr "Afficher la ville ?"
+
+#: models.py:114
+msgid "Display country?"
+msgstr "Afficher le pays ?"
+
+#: models.py:115
+msgid "Display avatar?"
+msgstr "Afficher l'avatar ?"
+
+#: models.py:116
+msgid "Display gender?"
+msgstr "Afficher le sexe ?"
+
+#: models.py:117
+msgid "Display date of birth?"
+msgstr "Afficher la date de naissance ?"
+
+#: models.py:126
+msgid "Ask"
+msgstr "Question"
+
+#: models.py:127
+msgid "Answer"
+msgstr "Réponse"
+
+#: models.py:135 templates/account/history.html:10
+msgid "Date"
+msgstr "Date"
+
+#: models.py:137
+msgid "IP"
+msgstr ""
+
+#: models.py:138 models.py:153 templates/account/history.html:10
+msgid "Host"
+msgstr "Hôte"
+
+#: models.py:139
+msgid "RP"
+msgstr ""
+
+#: models.py:140 templates/account/history.html:10
+msgid "Result"
+msgstr "Resultat"
+
+#: models.py:154
+msgid "Trust"
+msgstr ""
+
+#: views.py:40
+msgid "You already have an account."
+msgstr "Vous avez déjà un compte."
+
+#: views.py:49
+msgid "You already are loggued."
+msgstr "Vous êtes déjà connecté."
+
+#: views.py:226
+msgid "No trusted consumer found."
+msgstr ""
+
+#: views.py:302
+msgid "Your password was succesfuly changed."
+msgstr "Votre mot de passe a été mis à jour."
+
+#: views.py:332
+msgid ""
+"Your email was succesfuly changed and you are loggued out, please read the "
+"confirmation email."
+msgstr ""
+"Votre mail a été mis à jour et vous êtes déconnecté, consultez le mail de "
+"confirmation s'il vous plait."
+
+#: templates/account/confirm.html:6
+msgid "Confirmation OK"
+msgstr "Confirmation correcte"
+
+#: templates/account/confirm.html:7
+msgid "Your account have been activated"
+msgstr "Votre compte à été activé"
+
+#: templates/account/confirm.html:8
+#, fuzzy
+msgid "Go to home"
+msgstr "Se connecter"
+
+#: templates/account/confirm.html:10 templates/account/error.html:5
+#: templates/account/identities/create.html:7
+#: templates/account/identities/delete.html:7
+#: templates/account/identities/modify.html:8
+msgid "Error"
+msgstr "Erreur"
+
+#: templates/account/confirm.html:11
+msgid "This code is invalid"
+msgstr "Ce code n'est pas valide"
+
+#: templates/account/dashboard.html:5
+msgid ""
+"\n"
+"This page show all your identities. You can modify them. Need Help?"
+msgstr ""
+"\n"
+"Cette page affiche la liste de vos identités. Vous pouvez les modifier. "
+"Besoin d'aide?"
+
+#: templates/account/dashboard.html:6
+#: templates/account/identities/list.html:20
+#: templates/account/identities/show.html:37
+msgid "Clic here"
+msgstr "Cliquez ici"
+
+#: templates/account/dashboard.html:23
+msgid "Modify"
+msgstr "Modifier"
+
+#: templates/account/dashboard.html:34
+#: templates/account/identities/create.html:16
+msgid "Create new identity"
+msgstr "Créer une nouvelle identité"
+
+#: templates/account/history.html:5
+msgid "History"
+msgstr "Historique"
+
+#: templates/account/history.html:6
+msgid ""
+"The history page lists all the OpenID-enabled websites that you visited with "
+"yours identies"
+msgstr ""
+"L'historique recense tous les sites utilisant OpenID sur lesquels vous vous "
+"êtes connectés avec vos identités."
+
+#: templates/account/history.html:10
+msgid "identity"
+msgstr "identité"
+
+#: templates/account/history.html:20
+msgid "previous"
+msgstr "précedent"
+
+#: templates/account/history.html:24
+#, python-format
+msgid "Page %(num)s of %(nump)s."
+msgstr "Page %(num)s sur %(nump)s."
+
+#: templates/account/history.html:28
+msgid "next"
+msgstr "suivant"
+
+#: templates/account/history.html:34
+msgid "No history available."
+msgstr "Pas d'historique disponible."
+
+#: templates/account/home.html:13 templates/account/register.html:12
+msgid ""
+"\n"
+"openid.bearstech.com is a <strong>free</strong> (and free as beer) software "
+"provided by bearstech.\n"
+"You can create and manage multiple identities. This service is OpenID v2 "
+"compatible.\n"
+msgstr ""
+"\n"
+"openid.bearstech.com est un service fourni gratuitement et "
+"<strong>librement</strong> par Bearstech. Vous pouvez créer et gérer de "
+"multiples identités de manière centralisée. Ce service est compatible OpenID "
+"v2.\n"
+
+#: templates/account/home.html:21 templates/account/register.html:20
+msgid "To register, fill in the registration form below"
+msgstr "Pour vous enregistrer, veuillez compléter le formulaire ci-dessous"
+
+#: templates/account/login.html:9
+msgid "Login"
+msgstr "Connexion"
+
+#: templates/account/login.html:20
+msgid "If you don't have any account you can "
+msgstr "Si vous n'avez pas de compte, vous pouvez "
+
+#: templates/account/login.html:20
+msgid "register"
+msgstr "vous inscrire"
+
+#: templates/account/login.html:21
+msgid "Forgot password ?"
+msgstr "Vous avez oublié votre mot de passe ?"
+
+#: templates/account/logout.html:5
+msgid "Logged out"
+msgstr "Déconnecté"
+
+#: templates/account/logout.html:6
+msgid "You are now logged out"
+msgstr "Vous êtes déjà connecté."
+
+#: templates/account/register.html:25
+#, python-format
+msgid "Step %(step)s of %(step_count)s "
+msgstr "Étape %(step)s sur %(step_count)s "
+
+#: templates/account/register.html:29
+msgid "Next"
+msgstr "Suivant"
+
+#: templates/account/register_ok.html:4
+msgid "End of register"
+msgstr "Fin de l'inscription"
+
+#: templates/account/register_ok.html:5
+msgid ""
+"A confirmation email was sent. Check your mailbox to complete the "
+"registration process."
+msgstr ""
+"Un courrier de confirmation a été envoyé. Veuillez consulter votre boite "
+"mail pour terminer l'inscription."
+
+#: templates/account/edit/edit.html:8 templates/account/edit/form.html:6
+msgid "Your account"
+msgstr "Votre compte"
+
+#: templates/account/edit/edit.html:11
+msgid "Change your email"
+msgstr "Changer votre email"
+
+#: templates/account/edit/edit.html:17 templates/account/edit/edit.html:36
+#: templates/account/edit/form.html:13
+msgid "Change"
+msgstr "Changer"
+
+#: templates/account/edit/edit.html:21
+msgid ""
+"Note : after this change, you will be unlogged from\n"
+"this site and a new conformation email will sent."
+msgstr ""
+"Note : après ce changement vous serez déconnecté et un nouveau mail de "
+"confirmation vous sera envoyé"
+
+#: templates/account/identities/blank.html:6
+msgid "Identity"
+msgstr "Identité"
+
+#: templates/account/identities/blank.html:6
+msgid "does not exist."
+msgstr "n'existe pas"
+
+#: templates/account/identities/blank.html:7
+msgid "To create it, just :"
+msgstr "Pour en créer une :"
+
+#: templates/account/identities/blank.html:7
+msgid "Clic here."
+msgstr "cliquez ici"
+
+#: templates/account/identities/create.html:9
+msgid "That identity already exist."
+msgstr "Cet identité existe déjà."
+
+#: templates/account/identities/create.html:10
+msgid "A user already have that identity."
+msgstr "Un utilisateur posséde déjà cette identité"
+
+#: templates/account/identities/create.html:24
+msgid "Create"
+msgstr "Créer"
+
+#: templates/account/identities/create.html:28
+#: templates/account/identities/modify.html:24
+msgid "Note : your avatar will be resized to 100x90 pixels."
+msgstr "Note : votre avatar sera redimensionné à 100x90 pixels."
+
+#: templates/account/identities/delete.html:9
+msgid "That identity don't exist."
+msgstr "Cette identité n'existe pas"
+
+#: templates/account/identities/delete.html:10
+msgid "Is not your identity."
+msgstr "Cela n'est pas votre identité"
+
+#: templates/account/identities/delete.html:14
+msgid "Identity deleted."
+msgstr "Identité supprimée"
+
+#: templates/account/identities/delete.html:17
+msgid "Delete this identity?"
+msgstr "Supprimer cette identité ?"
+
+#: templates/account/identities/delete.html:25
+msgid "Return to your account page."
+msgstr "Revenir sur votre page personnelle."
+
+#: templates/account/identities/id_form.html:3
+msgid "Public ?"
+msgstr ""
+"Champ public ? (si cette case est cochée alors ce champ sera affiché sur la "
+"page de votre identité publique)"
+
+#: templates/account/identities/list.html:5
+msgid "List of your identities."
+msgstr "Liste de toute vos identités"
+
+#: templates/account/identities/list.html:16
+#: templates/account/identities/show.html:29
+msgid "Zip Code"
+msgstr "Code postal"
+
+#: templates/account/identities/list.html:20
+#: templates/account/identities/show.html:37
+msgid "To modify this identity : "
+msgstr "Pour modifier cette identité"
+
+#: templates/account/identities/modify.html:10
+msgid "That identity don't exist, you should : "
+msgstr "Cette identité n'existe pas, vous pouvez : "
+
+#: templates/account/identities/modify.html:10
+msgid "Create this one."
+msgstr "En créer une"
+
+#: templates/account/identities/modify.html:11
+msgid "Is not your Identity"
+msgstr "Ce n'est pas votre identité"
+
+#: templates/account/identities/modify.html:18
+msgid "Update identity"
+msgstr "Modifier l'identité"
+
+#: templates/account/identities/modify.html:21
+msgid "Update"
+msgstr "Mettre à jour"
+
+#: templates/account/identities/show.html:33
+msgid "OpenID Identity"
+msgstr "Identité OpenID"
+
+#: templates/account/identities/show.html:45
+msgid "Revoke it"
+msgstr "Revoquer"
+
+#: templates/account/passreset/password_reset_form.html:4
+msgid "Lost password"
+msgstr "Mot de passe perdu"
+
+#: templates/account/passreset/password_reset_form.html:13
+msgid "Submit"
+msgstr "Soumettre"

@@ -1,0 +1,42 @@
+{% extends 'base.html'%}
+{% load i18n %}
+{% block loginbox %}
+{% endblock loginbox %}
+{% block content %}
+        <script>
+            function getOidRequestStatus(){
+                $.getJSON("{% url oidRequestStatus %}", {}, oidRequestStatusCallBack);
+            }
+            function oidRequestStatusCallBack(data){
+                if(data.status == 'ok'){
+                    window.location = "{% url processRemoteTrustResult %}"
+                }else if(data.status == 'pending'){
+                    window.setTimeout(getOidRequestStatus,1000);
+                }
+            }
+            getOidRequestStatus();
+        </script>
+       <form  class="centered-form" method=post action="{% url login %}">{% csrf_token %}
+       <fieldset>
+        <legend>{% trans "Login" %}</legend>
+        {% if messages %}
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        {% endif %}
+        <table>
+        {{ form.as_table }}
+        <tr>
+        <td></td>
+        <td>
+          <input type="submit" value="OK" />
+          <input type="hidden" name="next" value="{{ next }}" />
+        </td>
+        </tr>
+        </table>
+        <p>{% trans "If you don't have any account you can "%}<a href="{% url accountcreate %}">{% trans "register" %}</a>.</p>
+        <p><a href="{% url resetform %}">{% trans "Forgot password ?"%}</a></p>
+        </fieldset>
+        </form>
+
+{% endblock content %}

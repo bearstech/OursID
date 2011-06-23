@@ -1,0 +1,13 @@
+{% extends "base.html"%}
+{% load i18n %}
+{% block content %}
+
+{% if not error %}
+        <h2>{% trans "Confirmation OK" %}</h2>
+        <p>{% blocktrans %}Your account have been activated{% endblocktrans %}</p>
+        <p><a href="{% url home %}">{% trans "Go to home" %}</a></p>
+{% else %}
+        <h2>{% trans "Error" %}</h2>
+        <p>{% blocktrans %}This code is invalid{% endblocktrans %}</p>
+{% endif %}
+{% endblock content %}

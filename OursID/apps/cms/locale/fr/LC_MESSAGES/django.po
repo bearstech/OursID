@@ -1,0 +1,169 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-09-02 17:01+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: models.py:18
+msgid "Code"
+msgstr "Code"
+
+#: models.py:19
+msgid "Name"
+msgstr "Nom"
+
+#: models.py:32
+msgid "Draft"
+msgstr "Brouillon"
+
+#: models.py:33
+msgid "Published"
+msgstr "Publié"
+
+#: models.py:34
+msgid "Waiting"
+msgstr "En attente"
+
+#: models.py:43
+msgid "Author"
+msgstr "Auteur"
+
+#: models.py:45
+msgid "Title"
+msgstr "Titre"
+
+#: models.py:45
+msgid "default title of page"
+msgstr "Titre par defaut de la page"
+
+#: models.py:46
+msgid "slug"
+msgstr "slug"
+
+#: models.py:46
+msgid "default slug of page"
+msgstr "Slug par defaut de la page"
+
+#: models.py:48
+msgid "login required"
+msgstr "Connexion requise"
+
+#: models.py:49
+msgid "in navigation"
+msgstr ""
+
+#: models.py:50
+msgid "template"
+msgstr ""
+
+#: models.py:51
+msgid "redirects"
+msgstr "redirection"
+
+#: models.py:51
+msgid "If not empty, redirect to this url"
+msgstr "Si rempli, redirige vers cette url"
+
+#: models.py:52
+msgid "Publish state"
+msgstr "Etat de publication"
+
+#: models.py:53
+msgid "publication date"
+msgstr "Date de publication"
+
+#: models.py:53
+msgid "(not ready)"
+msgstr "(pas prêt)"
+
+#: models.py:54
+msgid "Creation date"
+msgstr "Date de création"
+
+#: models.py:60 models.py:185
+msgid "page"
+msgstr "page"
+
+#: models.py:61
+msgid "pages"
+msgstr "pages"
+
+#: models.py:179
+msgid "HTML"
+msgstr "HTML"
+
+#: models.py:181
+msgid "content format"
+msgstr "Formatage"
+
+#: models.py:182
+msgid "title"
+msgstr "titre"
+
+#: models.py:182
+msgid "Enter title here to overide page's default"
+msgstr "Entrez ici un titre pour remplacer le titre par defaut de la page"
+
+#: models.py:183
+msgid "url"
+msgstr "url"
+
+#: models.py:183
+msgid "Enter slug here to overide page's default"
+msgstr "Entrez ici un titre pour remplacer le slug par default de la page"
+
+#: models.py:184
+msgid "language"
+msgstr "langue"
+
+#: models.py:186
+msgid "creation date"
+msgstr "date de création"
+
+#: models.py:187
+msgid "description"
+msgstr "description"
+
+#: models.py:187
+msgid "Few words."
+msgstr "Quelques mots."
+
+#: models.py:188
+msgid "body"
+msgstr "corps"
+
+#: models.py:188
+msgid "Content of page"
+msgstr "Contenu de la page"
+
+#: templates/cms/basecms.html:69
+msgid "Previous"
+msgstr "Précédent"
+
+#: templates/cms/basecms.html:70
+msgid "Next"
+msgstr "Suivant"
+
+#: templates/cms/blog.html:19
+msgid "previous"
+msgstr "précédent"
+
+#: templates/cms/blog.html:27
+msgid "next"
+msgstr "suivant"
+
+#: templates/cms/menubar.html:3
+msgid "Home"
+msgstr "Accueil"

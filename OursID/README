@@ -1,0 +1,63 @@
+.. _README
+
+======
+Oursid
+======
+
+Project manager : jcharpentier@bearstech.com
+Developpers : jcharpentier@bearstech.com, jlejeune@bearstech.com, jblondon@bearstech.com, fbasse@bearstech.com 
+Repository : git://github.com/bearstech/OursID.git
+WWW URL : https://github.com/bearstech/OursID
+Django version : 1.3
+Depends :
+
+   * django-mptt (trunk sorry)
+   * django-photologue (2.2)
+   * python-openid (2.x.x)
+   * python-yaml (3.05-2)
+   * python-recaptcha (1.0.3-1)
+   * python-xmpp (0.5.0rc1)
+   * python-jabberbot (0.13)
+
+To deploy this instance to production or development server please read
+deploy/README file
+
+
+Install with virtual_env
+------------------------
+
+Easy way to use this site with virtual_env::
+
+    cd ..
+    ./vtenv.sh
+    cd oursid
+    ./manage.py syncdb
+    ./manage.py test
+    ./manage.py runserver
+
+Tip to generate SECRET_KEY in settings.py::
+
+    import random; print "".join([random.choice("abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)") for i in range(50)])
+
+
+Enable Android notification
+------------------------
+
+Fill C2DM_AUTH_TOKEN variable in settings.py with your C2DM token.
+(See http://code.google.com/apis/accounts/docs/AuthForInstalledApps.html to get your token)
+
+
+Enable Jabber notification
+------------------------
+
+First you should set two variables JABBER_ID and JABBER_PWD in settings.py.
+
+Then, run this command to start the jabber bot:
+
+    ./manage.py jabber-bot
+
+
+Note
+----
+
+Logos in media/css/bearstech/img are copyrighted by their respectives owners.

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    This is an OpenID server endpoint.  Your browser should never
+    actually request this page.
+
+    {% if error %}
+      The OpenID server has encountered an error:
+      <p>
+      {{ error|escape }}
+      </p>
+    {% endif %}
+
+{% endblock content %}

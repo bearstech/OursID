@@ -1,0 +1,51 @@
+{% extends 'base.html'%}
+{% load i18n %}
+{% block profile %}profile='http://www.w3.org/2006/03/hcard'{% endblock profile %}
+{% block head %}
+{# <link rel="openid.delegate" href="http://www.openidfrance.fr/cyberj" /> #}
+<link rel="openid.server" href="{{ server_url }}" />
+<link rel="openid2.provider" href="{{ server_url }}" />
+
+{% endblock head%}
+{% block idtab %}class="on"{% endblock idtab %}
+
+{% block content %}
+
+        <h1 class="user_id"><a href="{% url accountdetail %}">identités</a> : {{ ident.userid }}</h1>
+
+<div class="vcard">
+        <ul>
+            <li><a href="{{ useridurl }}"><img src="{{ ident.identityportrait.get_avatar_url|default:"/media/css/bearstech/img/openid-icon-100x100.png" }}" class="photo" alt="photo" /></a></li>
+            <li class="fn">{% if identperms.sh_last_name or mine %}{{ ident.last_name }}{% endif %} {% if identperms.sh_first_name or mine %}{{ ident.first_name }}{% endif %}</li>
+        </ul>
+        <ul class="n adr">
+            {% if identperms.sh_username or mine %}<li><p>{% trans "Username" %} : </p><span class="nickname">{{ ident.username }}</span></li>{% endif %}
+            {% if identperms.sh_first_name or mine %}<li><p>{% trans "First name" %} : </p><span class="given-name">{{ ident.first_name }}</span></li>{% endif %}
+            {% if identperms.sh_last_name or mine %}<li><p>{% trans "Last name" %} : </p><span class="family-name">{{ ident.last_name }}</span></li>{% endif %}
+            {% if identperms.sh_email or mine %}<li><p>{% trans "Email" %} : </p><span class="email">{{ ident.email }}</span></li>{% endif %}
+            {% if identperms.sh_phone or mine %}<li><p>{% trans "Phone" %} : </p><span class="tel">{{ ident.phone }}</span></li>{% endif %}
+            {% if identperms.sh_adress or mine %}<li><p>{% trans "Adress" %} : </p><span class="adr">{{ ident.adress }}</span></li>{% endif %}
+            {% if identperms.sh_city or mine %}<li><p>{% trans "City" %} : </p><span class="locality" >{{ ident.city }}</span></li>{% endif %}
+            {% if identperms.sh_zipcode or mine %}<li><p>{% trans "Zip Code" %} : </p><span class="postal-code" >{{ ident.zipcode }}</span></li>{% endif %}
+            {% if identperms.sh_country or mine %}<li><p>{% trans "Country" %} : </p><span class="country-name" >{{ ident.country }}</span></li>{% endif %}
+        </ul>
+        <ul>
+            <li><p><br />{% trans "OpenID Identity" %}</p><a class="url" href="{{ useridurl }}">{{ useridurl }}</a></li>
+        </ul>
+</div>
+
+{% if mine %}<p class="modif_id">{% trans "To modify this identity : " %} <a href="{% url identedit userid=ident.userid %}">{% trans "Clic here" %}</a>.</p>{% endif %}
+{#{% if mine %}<p>{% trans "To delete this identity : " %}<a href="{% url identdelete userid=ident.userid %}">{% trans "Clic here" %}</a>.</p>{% endif %}#}
+
+{% if assocs %}
+<p class="association_list_text">Associations mémorisées avec cette identité : </p>
+<form method="post" action="{% url identrevokeassoc userid=ident.userid %}">{% csrf_token %}
+<ul>
+{% for assoc in assocs %}<li>{{ assoc.host }}
+<input type="submit" value="{% trans "Revoke it" %}" name="{{ assoc.host }}" />
+</li>{% endfor %}
+</ul>
+</form>
+{% endif %}
+
+{% endblock content %}

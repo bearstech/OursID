@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load cms_utils %}
+{% comment %}
+This patern is for CMS pages.
+We need :
+   - ancestors
+   - myself
+   - [ traductions ] if some traductions
+
+{% endcomment %}
+
+{% block cmstab %}class="on"{% endblock cmstab %}
+
+{% block content %}
+<div id="cms">
+
+    <!-- CMS Childrens -->
+    <div class="cms-left-menu">
+    
+    {% menu_bar lang %}
+
+    <!-- CMS Tree -->
+    {% block cms_tree %}{% if ancestors %}
+    <ul>
+    {#<li><a href="{% url cmsroot lang=lang%}">racine</a></li> #}
+    {% for parent in ancestors %}{% if forloop.first0 %}<li class="separator"> | </li>{% endif %}<li><a href="{{ parent.get_absolute_url }}">{{ parent.get_title }}</a></li>{% endfor %}</p>
+    </ul>
+    {% endif %}{% endblock cms_tree %}
+    <!-- END CMS Tree -->
+
+    {% block cms_childrens %}
+    <ul id="childrens">
+    {% for item in childrens %}
+    <li><a href="{{ item.get_absolute_url }}">{{ item.get_title }}</a>{% if item.get_content.description %} : {{ item.get_content.description|safe }} {% endif %}</li>
+    {% endfor %}
+    </ul>
+    {% endblock cms_childrens %}
+    </div>
+    <!-- END CMS childrens -->
+
+    <div class="cms-center-content">
+    
+    <!-- CMS Title -->
+    {% block cms_title %}
+    <h1>{{ myself.get_title }}</h1>
+    {% endblock cms_title %}
+    <!-- END CMS Title -->
+    
+    <!-- CMS Traductions -->
+    {% block cms_traductions %}{# Langs for cms #}
+    {% if traductions and not myself.get_content.body %}Translations :
+    <ul id="cms_traductions">
+        {% for lang in traductions%}<li><a href="{{ lang.get_absolute_url }}">{{ lang }} ({{lang.language}})</a></li>{% endfor %}
+    </ul>{% endif %}
+    {% endblock cms_traductions %}
+    <!-- END CMS Traductions -->
+
+    <!-- CMS Description -->
+    {% block cms_description %}
+    {% if myself.get_content.description %}<div id="cms_description">{{ myself.get_content.description|safe }}</div>{% endif %}
+    {% endblock cms_description %}
+    <!-- CMS Description -->
+    
+    <!-- CMS body -->
+    {% block cms_body %}
+    {% if myself.get_content.body %}<div id="cms_body">{{ myself.get_content.body|safe }}</div>{% endif %}
+    {% endblock cms_body %}
+    <!-- END CMS body -->
+
+    <!-- CMS content -->
+    {% block cms_content %}
+    {% endblock cms_content %}
+    <!-- END CMS content -->
+
+    
+    </div>
+</div>
+{% endblock content %}

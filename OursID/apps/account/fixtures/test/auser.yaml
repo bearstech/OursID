@@ -1,0 +1,146 @@
+- model: auth.user
+  pk: 1
+  fields:
+    date_joined: 2008-11-23 19:40:20.017911
+    email: a@a.fr
+    first_name: 'Toto'
+    groups: []
+    is_active: true
+    is_staff: true
+    is_superuser: true
+    last_login: 2008-11-23 19:40:20.017911
+    last_name: 'Joke'
+    password: sha1$423d3$6f95f58c492183dfb425964707bb105a47e61f18
+    user_permissions: []
+    username: dummy
+- fields: 
+    user: 1
+    confirmcode: "code"
+  model: account.userprofile
+  pk: 1
+- fields: 
+    adress: "" 
+    city: "gotam_city"
+    country: ""
+    email: "a@a.fr"
+    first_name: "showtoall"
+    last_name: "showtome"
+    phone: ""
+    userid: "dummy"
+    username: "dummy"
+    userprofile: 1
+    zipcode: 12345
+    gender: M
+    dob: null
+  model: account.identity
+  pk: 1
+- fields: 
+    sh_adress: false
+    sh_avatar: false
+    sh_city: false
+    sh_country: false
+    sh_email: false
+    sh_first_name: true
+    sh_last_name: false
+    sh_phone: false
+    sh_username: false
+    identity: 1
+    sh_zipcode: false
+    sh_gender: true
+    sh_dob: false
+  model: account.identityperms
+  pk: 1
+- fields: 
+    adress: ""
+    city: gotam
+    country: ""
+    email: ab@ab.fr
+    first_name: showto1
+    last_name: showtom1
+    phone: ""
+    userid: dommj
+    username: dommj
+    userprofile: 1
+    zipcode: 1234
+    gender: F
+    dob: null
+    is_active: false
+  model: account.identity
+  pk: 3
+- fields: 
+    sh_adress: false
+    sh_avatar: false
+    sh_city: false
+    sh_country: false
+    sh_email: false
+    sh_first_name: true
+    sh_last_name: false
+    sh_phone: false
+    sh_username: false
+    identity: 3
+    sh_zipcode: false
+    sh_gender: true
+    sh_dob: false
+  model: account.identityperms
+  pk: 3
+- model: auth.user
+  pk: 2
+  fields:
+    date_joined: 2008-11-23 19:40:20.017911
+    email: aa@aa.fr
+    first_name: 'tata'
+    groups: []
+    is_active: true
+    is_staff: true
+    is_superuser: true
+    last_login: 2008-11-23 19:40:20.017911
+    last_name: 'Joke'
+    password: sha1$423d3$6f95f58c492183dfb425964707bb105a47e61f18
+    user_permissions: []
+    username: tata
+- fields: 
+    user: 2
+    confirmcode: "tata"
+  model: account.userprofile
+  pk: 2
+- fields: 
+    adress: "" 
+    city: ""
+    country: "" 
+    email: aa@aa.fr
+    first_name: showtoall
+    last_name: showtome
+    phone: ""
+    userid: dummy2
+    username: dummy2
+    userprofile: 2
+    zipcode: ""
+    gender: M
+    dob: null
+  model: account.identity
+  pk: 2
+- fields: 
+    sh_adress: false
+    sh_avatar: false
+    sh_city: false
+    sh_country: false
+    sh_email: false
+    sh_first_name: true
+    sh_last_name: false
+    sh_phone: false
+    sh_username: false
+    identity: 2
+    sh_zipcode: false
+    sh_gender: true
+    sh_dob: false
+  model: account.identityperms
+  pk: 2
+- fields: 
+    auth_result: true
+    date: !!timestamp '2008-12-28 11:25:33.429755'
+    host: 'http://localhost:8001/'
+    identity: 1
+    rp: ""
+    ip: "0.0.0.0"
+  model: account.rphistory
+  pk: 1

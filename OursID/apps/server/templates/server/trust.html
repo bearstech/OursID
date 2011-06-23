@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+
+{% with trust_root|escape as trustroot %}
+
+{% if err %}<!-- Discorevy error : {{ err }} -->{% endif %}
+{% ifequal trust_root_valid "Valid" %}
+  <!-- Trust root has been validated by OpenID 2 mechanism. -->
+  <p>{% blocktrans %}The site <tt>{{ trustroot }}</tt> has requested verification
+  of your OpenID.{% endblocktrans %}</p>
+{% endifequal %}
+{% ifequal trust_root_valid "Invalid" %}
+<div class="error">
+  {% blocktrans %}<p>This request claims to be from {{ trustroot }} but I have 
+  determined that <em>it not true</em></p>{% endblocktrans %}
+</div>
+{% endifequal %}
+{% ifequal trust_root_valid "Unreachable" %}
+  <p>{% blocktrans %}The site <tt>{{ trustroot }}</tt> has requested verification
+  of your OpenID.  I have failed to reach it and thus cannot vouch for its
+  authenticity.  Perhaps it is on your local network.{% endblocktrans %}</p>
+{% endifequal %}
+{% ifequal trust_root_valid "DISCOVERY_FAILED" %}
+  <p>{% blocktrans %}The site <tt>{{ trustroot }}</tt> has requested verification
+  of your OpenID.  However, <tt>{{ trustroot }}</tt> does not 
+  implement OpenID 2.0's relying party verification mechanism.{% endblocktrans %}</p>
+{% endifequal %}
+
+{% endwith %}
+
+<!-- trust_root_valid is {{ trust_root_valid }} -->
+
+<div>{% trans "Requested fields" %}
+<ul>{% for req in requested %}<li>{{ req }}</li>{% endfor %}
+</ul>
+
+{% if defaultid %}
+<div class="defaultid">
+<p>{% blocktrans %}Your default identity for this consumer is : {{ defaultid.userid }}{% endblocktrans %}</p>
+<form method="post" action="{{ trust_handler_url }}">{% csrf_token %}
+<input type="hidden" name="identity" value="{{ defaultid.userid }}">
+<input type="submit" value="{% trans "Click here to use it" %}" name="allow" />
+</form>
+</div>
+<br/>
+{% endif%}
+
+<form method="post" action="{{ trust_handler_url }}">{% csrf_token %}
+  <br/>
+  {# number of idents #}
+  {% if identities|length_is:"1" %}
+      {% with identities|first as ident%}
+      {% trans "Your identity is : " %}
+      <input type="hidden" name="identity" value="{{ ident.userid }}">{{ ident.userid }}
+      {% endwith %}
+  {% else %}
+      {% trans "Chose your identity to show to relying party" %}
+      {% for ident in identities %}
+      <input type="radio" name="identity" value="{{ ident.userid }}">{{ ident.userid }}
+      {% endfor %}
+  {% endif %}
+  <br/>
+  {# buttons #}
+  <input type="submit" value="{% trans "Yes (Allow)" %}" name="allow" />
+  {% if not defaultid %}<input type="submit" value="{% trans "Always trust(Allow)" %}" name="alwaystrust" />{% endif %}
+  <input type="submit" value="{% trans "No (Cancel)"%}" name="cancel" />
+</form>
+</div>
+
+{% endblock content %}

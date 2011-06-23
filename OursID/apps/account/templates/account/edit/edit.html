@@ -1,0 +1,85 @@
+{% extends 'base.html'%}
+{% load i18n %}
+{% block acctab %}class="on"{% endblock acctab %}
+{% block content %}
+
+<!-- ################################################################### -->
+
+       <h2>{% trans "Your account" %}</h2>
+       <form class="centered-form" method="post" action="{% url accounteditemail %}">{% csrf_token %}
+       <fieldset>
+        <legend>{% trans "Change your email" %}</legend>
+        <table>
+            {{ emailform.as_table }}
+            <tr>
+            <td></td>
+            <td>
+            <input class="button" type="submit" value="{% trans "Change" %}">
+            </td>
+            </tr>
+        </table>
+       <p>{% blocktrans %}Note : after this change, you will be unlogged from
+this site and a new conformation email will sent.{% endblocktrans %}</p>
+       </fieldset>
+       </form>
+
+<!-- ################################################################### -->
+
+       <form class="centered-form" method="post" action="{% url accounteditpasw %}">{% csrf_token %}
+       <fieldset>
+        <legend>{% trans "Change your password" %}</legend>
+        <table>
+            {{ paswform.as_table }}
+            <tr>
+            <td></td>
+            <td>
+            <input class="button" type="submit" value="{% trans "Change" %}">
+            </td>
+            </tr>
+        </table>
+       <div class="centered-input"></div>
+       </fieldset>
+       </form>
+
+<!-- ################################################################### -->
+
+       <form class="centered-form" method="post" action="{% url accounteditnotif %}">{% csrf_token %}
+       <fieldset>
+        <legend>{% trans "Configure OpenID notification service" %}</legend>
+        <table>
+            <tr><th><label for="id_notification_status">Notification status:</label></th><td>{{ notification_status }}</td></tr> 
+            {{ notifform.as_table }}
+            <tr>
+            <td></td>
+            <td>
+            <input class="button" type="submit" value="{% trans "Change" %}">
+            </td>
+            </tr>
+        </table>
+       <div class="centered-input"></div>
+       </fieldset>
+       </form>
+       
+<!-- ################################################################### -->
+
+       <form class="centered-form" method="post" action="{% url accounteditoauth %}">{% csrf_token %}
+       <fieldset>
+        <legend>{% trans "Configure OAuth notification" %}</legend>
+        <table>
+            {% if oauthform %}
+                {{ oauthform.as_table }}
+                <tr>
+                <td></td>
+                <td>
+                <input class="button" type="submit" value="{% trans "Change" %}">
+                </td>
+                </tr>
+            {% else %}
+                <tr><th>{% trans "Warning:" %}</th><td>{% trans "OAuth notification is only available when a C2DM device is set." %}</td></tr>
+            {% endif %}
+        </table>
+       <div class="centered-input"></div>
+       </fieldset>
+       </form>
+       
+{% endblock content %}

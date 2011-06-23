@@ -1,0 +1,32 @@
+{% extends "cms/basecms.html" %}
+{% load i18n %}
+{% block cms_childrens %}
+    <div class="articles_list">
+    {% for article in page.object_list %}
+            <h3><a href="{{ article.get_absolute_url }}">{{ article.get_title }}</a></h3>
+            {% if article.get_content %}{% with article.get_content as articlecontent %}
+            <em class="date">{{article.created}}</em>
+            {% if articlecontent.description %}<div class="description">{{ articlecontent.description|safe }}</div>{% endif %}
+            {% if articlecontent.body %}<div class="body">{{ articlecontent.body|safe }}</div>{% endif %}
+            <br/>
+            {% endwith %}{% endif %}
+    {% endfor %}
+    </div>
+
+        <div class="pagination">
+            <span class="step-links">
+                {% if page.has_previous %}
+                    <a href="{% url cmsblogpage lang=lang url=myself.get_path page=page.previous_page_number %}">{% trans "previous" %}</a>
+                {% endif %}
+
+                <span class="current">
+                    Page {{ page.number }} of {{ page.paginator.num_pages }}.
+                </span>
+
+                {% if page.has_next %}
+                    <a href="{% url cmsblogpage lang=lang url=myself.get_path page=page.next_page_number %}">{% trans "next" %}</a>
+                {% endif %}
+            </span>
+        </div>
+    </div>
+{% endblock cms_childrens %}

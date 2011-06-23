@@ -1,0 +1,1017 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-23 15:07+0200\n"
+"PO-Revision-Date: 2011-04-26 15:45+0100\n"
+"Last-Translator: Frédéric Basse <fbasse@bearstech.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: apps/account/forms.py:46
+#: apps/account/templates/account/identities/delete.html:22
+msgid "Confirm"
+msgstr "Confirmer"
+
+#: apps/account/forms.py:46
+msgid "Type DELETE here to confirm."
+msgstr ""
+
+#: apps/account/forms.py:50
+msgid "DELETE"
+msgstr ""
+
+#: apps/account/forms.py:53
+msgid "Confirmation incorrect"
+msgstr "Confirmation invalide"
+
+#: apps/account/forms.py:76 apps/account/forms.py:344
+#: apps/account/models.py:109
+#: apps/account/templates/account/identities/list.html:11
+#: apps/account/templates/account/identities/show.html:25
+#: apps/oauth_forwarder/forms.py:28
+msgid "Email"
+msgstr "Email"
+
+#: apps/account/forms.py:76 apps/account/forms.py:344
+msgid "A confirmation mail will be sent to your email address."
+msgstr "Un email de confirmation vous sera envoyé."
+
+#: apps/account/forms.py:77 apps/account/forms.py:345
+msgid "Email confirmation"
+msgstr ""
+
+#: apps/account/forms.py:77 apps/account/forms.py:345
+msgid "Please type again your email address here."
+msgstr ""
+
+#: apps/account/forms.py:78 apps/account/forms.py:283
+#: apps/account/forms.py:384
+msgid "Password"
+msgstr "Mot de passe"
+
+#: apps/account/forms.py:78 apps/account/forms.py:384
+msgid "Your password."
+msgstr "Votre mot de passe."
+
+#: apps/account/forms.py:79 apps/account/forms.py:385
+msgid "Password confirmation"
+msgstr "Mot de passe (confirmation)"
+
+#: apps/account/forms.py:79 apps/account/forms.py:385
+msgid "Please type again your password."
+msgstr "Merci d'entrer à nouveau votre mot de passe."
+
+#: apps/account/forms.py:89 apps/account/forms.py:355
+msgid "A user with that email already exists."
+msgstr "Un utilisateur avec cet email existe déjà."
+
+#: apps/account/forms.py:100 apps/account/forms.py:364
+msgid "The two email fields didnt corresponds."
+msgstr "L'email et celui de confirmation ne correspondent pas."
+
+#: apps/account/forms.py:110 apps/account/forms.py:394
+msgid "The two password fields didnt corresponds."
+msgstr ""
+
+#: apps/account/forms.py:114 apps/account/models.py:106
+#: apps/account/templates/account/identities/list.html:10
+#: apps/account/templates/account/identities/show.html:22
+msgid "Username"
+msgstr ""
+
+#: apps/account/forms.py:114
+msgid "Name of your first openid identity."
+msgstr ""
+
+#: apps/account/forms.py:128 apps/account/forms.py:130
+msgid "A user with that username already exists."
+msgstr ""
+
+#: apps/account/forms.py:282
+msgid "Email or Username"
+msgstr ""
+
+#: apps/account/forms.py:282
+msgid "Your Email"
+msgstr ""
+
+#: apps/account/forms.py:292 apps/account/forms.py:297
+#: apps/account/tests.py:71 apps/account/tests.py:75 apps/account/tests.py:79
+#: apps/account/tests.py:83 apps/account/tests.py:179
+msgid "Email or password incorrect"
+msgstr ""
+
+#: apps/account/forms.py:295 apps/account/tests.py:92
+msgid "This user is not active"
+msgstr ""
+
+#: apps/account/forms.py:302 apps/account/models.py:105
+msgid "UserID"
+msgstr ""
+
+#: apps/account/forms.py:310
+msgid "This UserID already exists."
+msgstr ""
+
+#: apps/account/forms.py:401
+msgid "Jabber ID"
+msgstr ""
+
+#: apps/account/forms.py:401
+msgid "Enter your Jabber ID"
+msgstr ""
+
+#: apps/account/forms.py:408
+msgid "This Jabber ID isn't valid !"
+msgstr ""
+
+#: apps/account/forms.py:415
+msgid "Enable OAuth notification"
+msgstr ""
+
+#: apps/account/forms.py:456
+msgid "Invalid public key"
+msgstr ""
+
+#: apps/account/forms.py:457
+msgid "Invalid private key"
+msgstr ""
+
+#: apps/account/forms.py:458
+msgid "Invalid cookie"
+msgstr ""
+
+#: apps/account/forms.py:459
+msgid "Invalid entry, please try again."
+msgstr ""
+
+#: apps/account/forms.py:460
+msgid ""
+"The parameters to verify were incorrect, make sure you are passing all the "
+"required parameters."
+msgstr ""
+
+#: apps/account/forms.py:461
+msgid "Invalid referrer domain"
+msgstr ""
+
+#: apps/account/forms.py:462
+msgid "Could not contact reCAPTCHA server"
+msgstr ""
+
+#: apps/account/models.py:30
+msgid "Male"
+msgstr ""
+
+#: apps/account/models.py:30
+msgid "Female"
+msgstr ""
+
+#: apps/account/models.py:46
+msgid "Confirm code"
+msgstr ""
+
+#: apps/account/models.py:88
+msgid "OPENID : confirmation"
+msgstr ""
+
+#: apps/account/models.py:107
+#: apps/account/templates/account/identities/list.html:12
+#: apps/account/templates/account/identities/show.html:23
+msgid "First name"
+msgstr ""
+
+#: apps/account/models.py:108
+#: apps/account/templates/account/identities/list.html:13
+#: apps/account/templates/account/identities/show.html:24
+msgid "Last name"
+msgstr ""
+
+#: apps/account/models.py:110
+#: apps/account/templates/account/identities/list.html:14
+#: apps/account/templates/account/identities/show.html:26
+msgid "Phone"
+msgstr ""
+
+#: apps/account/models.py:111
+msgid "Date of birth"
+msgstr ""
+
+#: apps/account/models.py:112
+#: apps/account/templates/account/identities/list.html:15
+#: apps/account/templates/account/identities/show.html:27
+msgid "Adress"
+msgstr ""
+
+#: apps/account/models.py:113
+msgid "ZIP Code"
+msgstr ""
+
+#: apps/account/models.py:114
+#: apps/account/templates/account/identities/list.html:17
+#: apps/account/templates/account/identities/show.html:28
+msgid "City"
+msgstr ""
+
+#: apps/account/models.py:115
+#: apps/account/templates/account/identities/list.html:18
+#: apps/account/templates/account/identities/show.html:30
+msgid "Country"
+msgstr ""
+
+#: apps/account/models.py:116
+msgid "Gender"
+msgstr ""
+
+#: apps/account/models.py:118
+msgid "Is Active?"
+msgstr ""
+
+#: apps/account/models.py:140
+msgid "Display username?"
+msgstr ""
+
+#: apps/account/models.py:141
+msgid "Display first name?"
+msgstr ""
+
+#: apps/account/models.py:142
+msgid "Display last name?"
+msgstr ""
+
+#: apps/account/models.py:143
+msgid "Display email?"
+msgstr ""
+
+#: apps/account/models.py:144
+msgid "Display phone?"
+msgstr ""
+
+#: apps/account/models.py:145
+msgid "Display adress?"
+msgstr ""
+
+#: apps/account/models.py:146
+msgid "Display ZIP Code?"
+msgstr ""
+
+#: apps/account/models.py:147
+msgid "Display city?"
+msgstr ""
+
+#: apps/account/models.py:148
+msgid "Display country?"
+msgstr ""
+
+#: apps/account/models.py:149
+msgid "Display avatar?"
+msgstr ""
+
+#: apps/account/models.py:150
+msgid "Display gender?"
+msgstr ""
+
+#: apps/account/models.py:151
+msgid "Display date of birth?"
+msgstr ""
+
+#: apps/account/models.py:163 apps/account/templates/account/history.html:10
+msgid "Date"
+msgstr ""
+
+#: apps/account/models.py:165
+msgid "IP"
+msgstr ""
+
+#: apps/account/models.py:166 apps/account/models.py:179
+#: apps/account/templates/account/history.html:10
+msgid "Host"
+msgstr ""
+
+#: apps/account/models.py:167
+msgid "RP"
+msgstr ""
+
+#: apps/account/models.py:168 apps/account/templates/account/history.html:10
+msgid "Result"
+msgstr ""
+
+#: apps/account/models.py:180
+msgid "Trust"
+msgstr ""
+
+#: apps/account/views.py:67
+msgid "You already have an account."
+msgstr ""
+
+#: apps/account/views.py:76
+msgid "You already are logged."
+msgstr ""
+
+#: apps/account/views.py:282
+msgid "No trusted consumer found."
+msgstr ""
+
+#: apps/account/views.py:337
+msgid "Jabber notification enabled on "
+msgstr ""
+
+#: apps/account/views.py:339
+msgid "Jabber notification disabled"
+msgstr ""
+
+#: apps/account/views.py:341
+msgid "Google Android C2DM notification with GrizzlID application"
+msgstr ""
+
+#: apps/account/views.py:344
+msgid "None"
+msgstr ""
+
+#: apps/account/views.py:380
+msgid ""
+"Hi from GrizzlID ! If you would like to receive OpenID authentification "
+"requests on this Jabber account, accept me."
+msgstr ""
+
+#: apps/account/views.py:392
+msgid ""
+"Your notification configuration was successfully changed. A subscription "
+"request has been sent to your Jabber ID!"
+msgstr ""
+
+#: apps/account/views.py:418
+msgid "Your notification configuration was successfully changed."
+msgstr ""
+
+#: apps/account/views.py:444
+msgid "Your password was successfully changed."
+msgstr ""
+
+#: apps/account/views.py:474
+msgid ""
+"Your email was succesfuly changed and you are loggued out, please read the "
+"confirmation email."
+msgstr ""
+
+#: apps/account/templates/account/confirm.html:6
+msgid "Confirmation OK"
+msgstr ""
+
+#: apps/account/templates/account/confirm.html:7
+#, fuzzy
+msgid "Your account have been activated"
+msgstr "Votre compte a été activé"
+
+#: apps/account/templates/account/confirm.html:8
+msgid "Go to home"
+msgstr ""
+
+#: apps/account/templates/account/confirm.html:10
+#: apps/account/templates/account/error.html:5
+#: apps/account/templates/account/identities/create.html:7
+#: apps/account/templates/account/identities/delete.html:7
+#: apps/account/templates/account/identities/modify.html:8
+#: apps/oauth_forwarder/templates/oauth_forwarder/error.html:5
+msgid "Error"
+msgstr ""
+
+#: apps/account/templates/account/confirm.html:11
+msgid "This code is invalid"
+msgstr ""
+
+#: apps/account/templates/account/dashboard.html:5
+msgid ""
+"\n"
+"This page show all your identities. You can modify them. Need Help?"
+msgstr ""
+
+#: apps/account/templates/account/dashboard.html:6
+#: apps/account/templates/account/identities/list.html:20
+#: apps/account/templates/account/identities/show.html:37
+msgid "Clic here"
+msgstr ""
+
+#: apps/account/templates/account/dashboard.html:23
+msgid "Modify"
+msgstr ""
+
+#: apps/account/templates/account/dashboard.html:34
+#: apps/account/templates/account/identities/create.html:16
+msgid "Create new identity"
+msgstr ""
+
+#: apps/account/templates/account/history.html:5 templates/base.html:60
+msgid "History"
+msgstr "Historique"
+
+#: apps/account/templates/account/history.html:6
+msgid ""
+"The history page lists all the OpenID-enabled websites that you visited with "
+"yours identies"
+msgstr ""
+
+#: apps/account/templates/account/history.html:10
+#, fuzzy
+msgid "identity"
+msgstr "Mes identités"
+
+#: apps/account/templates/account/history.html:20
+#: apps/cms/templates/cms/blog.html:19
+msgid "previous"
+msgstr ""
+
+#: apps/account/templates/account/history.html:24
+#, python-format
+msgid "Page %(num)s of %(nump)s."
+msgstr ""
+
+#: apps/account/templates/account/history.html:28
+#: apps/cms/templates/cms/blog.html:27
+msgid "next"
+msgstr "suivant"
+
+#: apps/account/templates/account/history.html:34
+msgid "No history available."
+msgstr ""
+
+#: apps/account/templates/account/home.html:13
+msgid ""
+"\n"
+"openid.bearstech.com is a <strong>free</strong> (and free as beer) software "
+"provided by bearstech.\n"
+"You can create and manage multiple identities. This service is OpenID v2 "
+"compatible.\n"
+msgstr ""
+
+#: apps/account/templates/account/home.html:21
+msgid ""
+"This service allows you to use your identity with your Android phone or your "
+"Jabber account."
+msgstr ""
+"Ce service permet de vous identifier avec votre téléphone Android ou votre "
+"compte Jabber."
+
+#: apps/account/templates/account/home.html:21
+#: apps/account/templates/account/home.html:24
+msgid "More..."
+msgstr "Plus..."
+
+#: apps/account/templates/account/home.html:24
+msgid "Use this service to forward OAuth request to your Android phone."
+msgstr ""
+"Vous pouvez aussi transmettre des requêtes OAuth vers votre téléphone "
+"Android."
+
+#: apps/account/templates/account/home.html:28
+msgid "To register, fill in the registration form below"
+msgstr ""
+
+#: apps/account/templates/account/home.html:36
+msgid "Next"
+msgstr "Suivant"
+
+#: apps/account/templates/account/home.html:39
+msgid "By clicking register, you acknowledge that you have read and agree to"
+msgstr ""
+"En cliquant sur inscription, vous reconnaissez avoir lu et vous acceptez les"
+
+#: apps/account/templates/account/home.html:39
+msgid "Terms of Use"
+msgstr "Conditions d'utilisation"
+
+#: apps/account/templates/account/home.html:39
+msgid "and the"
+msgstr "et la"
+
+#: apps/account/templates/account/home.html:39
+msgid "Privacy Policy"
+msgstr "Politique de confidentialité"
+
+#: apps/account/templates/account/login.html:21 templates/base.html:38
+msgid "Login"
+msgstr "Connexion"
+
+#: apps/account/templates/account/login.html:37
+#: apps/oauth_forwarder/templates/oauth_forwarder/forward.html:21
+msgid "If you don't have any account you can "
+msgstr ""
+
+#: apps/account/templates/account/login.html:37
+#: apps/oauth_forwarder/templates/oauth_forwarder/forward.html:21
+msgid "register"
+msgstr ""
+
+#: apps/account/templates/account/login.html:38
+msgid "Forgot password ?"
+msgstr ""
+
+#: apps/account/templates/account/logout.html:5
+msgid "Logged out"
+msgstr ""
+
+#: apps/account/templates/account/logout.html:6
+msgid "You are now logged out"
+msgstr ""
+
+#: apps/account/templates/account/register_ok.html:4
+msgid "End of register"
+msgstr ""
+
+#: apps/account/templates/account/register_ok.html:5
+msgid ""
+"A confirmation email was sent. Check your mailbox to complete the "
+"registration process."
+msgstr ""
+
+#: apps/account/templates/account/edit/edit.html:8
+#: apps/account/templates/account/edit/form.html:6
+#, fuzzy
+msgid "Your account"
+msgstr "Mon compte"
+
+#: apps/account/templates/account/edit/edit.html:11
+msgid "Change your email"
+msgstr ""
+
+#: apps/account/templates/account/edit/edit.html:17
+#: apps/account/templates/account/edit/edit.html:36
+#: apps/account/templates/account/edit/edit.html:55
+#: apps/account/templates/account/edit/edit.html:74
+#: apps/account/templates/account/edit/form.html:13
+msgid "Change"
+msgstr ""
+
+#: apps/account/templates/account/edit/edit.html:21
+msgid ""
+"Note : after this change, you will be unlogged from\n"
+"this site and a new conformation email will sent."
+msgstr ""
+
+#: apps/account/templates/account/edit/edit.html:30
+msgid "Change your password"
+msgstr ""
+
+#: apps/account/templates/account/edit/edit.html:48
+msgid "Configure OpenID notification service"
+msgstr ""
+
+#: apps/account/templates/account/edit/edit.html:67
+msgid "Configure OAuth notification"
+msgstr ""
+
+#: apps/account/templates/account/edit/edit.html:78
+msgid "Warning:"
+msgstr ""
+
+#: apps/account/templates/account/edit/edit.html:78
+msgid "OAuth notification is only available when a C2DM device is set."
+msgstr ""
+"La notification OAuth n'est disponible qu'après avoir configuré un appareil "
+"Android."
+
+#: apps/account/templates/account/identities/blank.html:6
+msgid "Identity"
+msgstr ""
+
+#: apps/account/templates/account/identities/blank.html:6
+msgid "does not exist."
+msgstr ""
+
+#: apps/account/templates/account/identities/blank.html:7
+msgid "To create it, just :"
+msgstr ""
+
+#: apps/account/templates/account/identities/blank.html:7
+msgid "Clic here."
+msgstr ""
+
+#: apps/account/templates/account/identities/create.html:9
+msgid "That identity already exist."
+msgstr ""
+
+#: apps/account/templates/account/identities/create.html:10
+msgid "A user already have that identity."
+msgstr ""
+
+#: apps/account/templates/account/identities/create.html:24
+msgid "Create"
+msgstr ""
+
+#: apps/account/templates/account/identities/create.html:28
+#: apps/account/templates/account/identities/modify.html:24
+msgid "Note : your avatar will be resized to 100x90 pixels."
+msgstr ""
+
+#: apps/account/templates/account/identities/delete.html:9
+msgid "That identity don't exist."
+msgstr ""
+
+#: apps/account/templates/account/identities/delete.html:10
+msgid "Is not your identity."
+msgstr ""
+
+#: apps/account/templates/account/identities/delete.html:14
+msgid "Identity deleted."
+msgstr ""
+
+#: apps/account/templates/account/identities/delete.html:17
+msgid "Delete this identity?"
+msgstr ""
+
+#: apps/account/templates/account/identities/delete.html:25
+msgid "Return to your account page."
+msgstr ""
+
+#: apps/account/templates/account/identities/id_form.html:3
+msgid "Public ?"
+msgstr ""
+
+#: apps/account/templates/account/identities/list.html:5
+#, fuzzy
+msgid "List of your identities."
+msgstr "Mes identités"
+
+#: apps/account/templates/account/identities/list.html:16
+#: apps/account/templates/account/identities/show.html:29
+msgid "Zip Code"
+msgstr ""
+
+#: apps/account/templates/account/identities/list.html:20
+#: apps/account/templates/account/identities/show.html:37
+msgid "To modify this identity : "
+msgstr ""
+
+#: apps/account/templates/account/identities/modify.html:10
+msgid "That identity don't exist, you should : "
+msgstr ""
+
+#: apps/account/templates/account/identities/modify.html:10
+msgid "Create this one."
+msgstr ""
+
+#: apps/account/templates/account/identities/modify.html:11
+msgid "Is not your Identity"
+msgstr ""
+
+#: apps/account/templates/account/identities/modify.html:18
+msgid "Update identity"
+msgstr ""
+
+#: apps/account/templates/account/identities/modify.html:21
+msgid "Update"
+msgstr ""
+
+#: apps/account/templates/account/identities/show.html:33
+msgid "OpenID Identity"
+msgstr ""
+
+#: apps/account/templates/account/identities/show.html:45
+msgid "Revoke it"
+msgstr ""
+
+#: apps/account/templates/account/passreset/password_reset_form.html:4
+msgid "Lost password"
+msgstr ""
+
+#: apps/account/templates/account/passreset/password_reset_form.html:13
+msgid "Submit"
+msgstr ""
+
+#: apps/cms/models.py:37
+msgid "Code"
+msgstr ""
+
+#: apps/cms/models.py:38
+msgid "Name"
+msgstr ""
+
+#: apps/cms/models.py:52
+msgid "Draft"
+msgstr ""
+
+#: apps/cms/models.py:53
+msgid "Published"
+msgstr ""
+
+#: apps/cms/models.py:54
+msgid "Waiting"
+msgstr ""
+
+#: apps/cms/models.py:63
+msgid "Author"
+msgstr ""
+
+#: apps/cms/models.py:65
+msgid "Title"
+msgstr ""
+
+#: apps/cms/models.py:65
+msgid "default title of page"
+msgstr ""
+
+#: apps/cms/models.py:66
+msgid "slug"
+msgstr ""
+
+#: apps/cms/models.py:66
+msgid "default slug of page"
+msgstr ""
+
+#: apps/cms/models.py:68
+msgid "login required"
+msgstr ""
+
+#: apps/cms/models.py:69
+msgid "in navigation"
+msgstr ""
+
+#: apps/cms/models.py:70
+msgid "template"
+msgstr ""
+
+#: apps/cms/models.py:71
+msgid "redirects"
+msgstr ""
+
+#: apps/cms/models.py:71
+msgid "If not empty, redirect to this url"
+msgstr ""
+
+#: apps/cms/models.py:72
+msgid "Publish state"
+msgstr ""
+
+#: apps/cms/models.py:73
+msgid "publication date"
+msgstr ""
+
+#: apps/cms/models.py:73
+msgid "(not ready)"
+msgstr ""
+
+#: apps/cms/models.py:74
+msgid "Creation date"
+msgstr ""
+
+#: apps/cms/models.py:79 apps/cms/models.py:204
+msgid "page"
+msgstr ""
+
+#: apps/cms/models.py:80
+msgid "pages"
+msgstr ""
+
+#: apps/cms/models.py:198
+msgid "HTML"
+msgstr ""
+
+#: apps/cms/models.py:200
+msgid "content format"
+msgstr ""
+
+#: apps/cms/models.py:201
+msgid "title"
+msgstr ""
+
+#: apps/cms/models.py:201
+msgid "Enter title here to overide page's default"
+msgstr ""
+
+#: apps/cms/models.py:202
+msgid "url"
+msgstr ""
+
+#: apps/cms/models.py:202
+msgid "Enter slug here to overide page's default"
+msgstr ""
+
+#: apps/cms/models.py:203
+msgid "language"
+msgstr ""
+
+#: apps/cms/models.py:205
+msgid "creation date"
+msgstr ""
+
+#: apps/cms/models.py:206
+msgid "description"
+msgstr ""
+
+#: apps/cms/models.py:206
+msgid "Few words."
+msgstr ""
+
+#: apps/cms/models.py:207
+msgid "body"
+msgstr ""
+
+#: apps/cms/models.py:207
+msgid "Content of page"
+msgstr ""
+
+#: apps/oauth_forwarder/forms.py:28
+msgid "Enter the email used to register your account."
+msgstr "Entrer l'email utilisé pour enregistrer votre compte."
+
+#: apps/oauth_forwarder/forms.py:38
+msgid "There's no account with this email !"
+msgstr "Aucun compte ne correspond à cet email !"
+
+#: apps/oauth_forwarder/views.py:69
+msgid "Error: invalid URL !"
+msgstr "Erreur: URL invalide !"
+
+#: apps/oauth_forwarder/views.py:85
+msgid "Unknown user profile!"
+msgstr "Profile utilisateur inconnu !"
+
+#: apps/oauth_forwarder/views.py:89
+msgid ""
+"OAuth notification is disabled! Please enable OAuth notification in your "
+"account settings."
+msgstr ""
+"Les notifications OAuth est désactivée! Vous pouvez activer les "
+"notifications OAuth dans les réglages de votre compte."
+
+#: apps/oauth_forwarder/views.py:93
+msgid "No notification device set!"
+msgstr "Aucun système de notification défini !"
+
+#: apps/oauth_forwarder/views.py:107
+msgid ""
+"OAuth request has been forwarded to your device. This page will be "
+"automatically refreshed as soon as you answer."
+msgstr ""
+"La requête OAuth a été transmise à votre téléphone. Si vous la validez, vous "
+"serez automatiquement redirigé."
+
+#: apps/oauth_forwarder/views.py:109
+msgid "Error: your device is not registered!"
+msgstr "Erreur: votre téléphone n'est pas enregistré !"
+
+#: apps/oauth_forwarder/views.py:111
+msgid "Error: invalid device registration!"
+msgstr "Erreur: l'enregistrement de votre téléphone est invalide !"
+
+#: apps/oauth_forwarder/views.py:113
+#, python-format
+msgid ""
+"Ooups... There's an error (%i)! We've been notified and we'll try to solve "
+"it as soon as possible."
+msgstr "Ooups... Il y a eu une erreur (%i)! Nous avons été informés du problème et allons le résoudre au plus vite."
+
+#: apps/oauth_forwarder/templates/oauth_forwarder/forward.html:6
+#: apps/oauth_forwarder/templates/oauth_forwarder/index.html:5
+#: apps/oauth_forwarder/templates/oauth_forwarder/wait.html:22
+#: templates/base.html:62
+msgid "OAuth forwarding"
+msgstr ""
+
+#: apps/oauth_forwarder/templates/oauth_forwarder/index.html:6
+msgid "To use OAuth forwarding, add the link below to your bookmarks bar:"
+msgstr ""
+"Pour utiliser la fonction OAuth forwarding, ajoutez le lien ci-dessous à "
+"votre barre de favoris:"
+
+#: apps/oauth_forwarder/templates/oauth_forwarder/index.html:8
+msgid ""
+"On a OAuth 1.0 authentication page, click on this bookmarklet to forward the "
+"identification process to your mobile."
+msgstr ""
+"Sur une page d'authentification OAuth 1.0, un clic sur ce favori permet de "
+"déporter le processus d'identification sur votre mobile."
+
+#: apps/oauth_forwarder/templates/oauth_forwarder/index.html:9
+msgid "You must install the GrizzlID application on your Android phone."
+msgstr ""
+"Vous devez obligatoirement installer l'application GrizzlID sur votre "
+"téléphone Android."
+
+#: apps/oauth_forwarder/templates/oauth_forwarder/index.html:10
+msgid "See this page to download GrizzlID for Android."
+msgstr "Cliquez ici pour télécharger GrizzlID pour Android."
+
+#: apps/server/views.py:145
+msgid "A notification has been sent to your device !"
+msgstr "Une notification a été envoyée à votre appareil !"
+
+#: apps/server/views.py:147
+#, python-format
+msgid "Error %i : couldn't notify your device!"
+msgstr "Erreur %i : impossible d'envoyer la notification !"
+
+#: apps/server/views.py:547
+#, python-format
+msgid "The website %s is requesting access to your GrizzlID identity."
+msgstr "Le site %s demande l'accès à votre identité GrizzlID."
+
+#: apps/server/views.py:550
+#, python-format
+msgid " The following personal informations will be shared: %s"
+msgstr ""
+
+#: apps/server/templates/server/trust.html:10
+#, python-format
+msgid ""
+"The site <tt>%(trustroot)s</tt> has requested verification\n"
+"  of your OpenID."
+msgstr ""
+
+#: apps/server/templates/server/trust.html:15
+#, python-format
+msgid ""
+"<p>This request claims to be from %(trustroot)s but I have \n"
+"  determined that <em>it not true</em></p>"
+msgstr ""
+
+#: apps/server/templates/server/trust.html:20
+#, python-format
+msgid ""
+"The site <tt>%(trustroot)s</tt> has requested verification\n"
+"  of your OpenID.  I have failed to reach it and thus cannot vouch for its\n"
+"  authenticity.  Perhaps it is on your local network."
+msgstr ""
+
+#: apps/server/templates/server/trust.html:25
+#, python-format
+msgid ""
+"The site <tt>%(trustroot)s</tt> has requested verification\n"
+"  of your OpenID.  However, <tt>%(trustroot)s</tt> does not \n"
+"  implement OpenID 2.0's relying party verification mechanism."
+msgstr ""
+
+#: apps/server/templates/server/trust.html:34
+msgid "Requested fields"
+msgstr ""
+
+#: apps/server/templates/server/trust.html:40
+#, python-format
+msgid "Your default identity for this consumer is : %(defaultid.userid)s"
+msgstr ""
+
+#: apps/server/templates/server/trust.html:43
+msgid "Click here to use it"
+msgstr ""
+
+#: apps/server/templates/server/trust.html:54
+#, fuzzy
+msgid "Your identity is : "
+msgstr "Mes identités"
+
+#: apps/server/templates/server/trust.html:58
+msgid "Chose your identity to show to relying party"
+msgstr ""
+
+#: apps/server/templates/server/trust.html:65
+msgid "Yes (Allow)"
+msgstr "Oui (Accepter)"
+
+#: apps/server/templates/server/trust.html:66
+msgid "Always trust(Allow)"
+msgstr "Toujours accepter"
+
+#: apps/server/templates/server/trust.html:67
+msgid "No (Cancel)"
+msgstr "Non (Annuler)"
+
+#: templates/404.html:5
+msgid "Error 404"
+msgstr "Erreur 404"
+
+#: templates/404.html:6
+msgid "Document not found."
+msgstr "Document introuvable."
+
+#: templates/base.html:28
+msgid "Logout"
+msgstr "Déconnexion"
+
+#: templates/base.html:46
+msgid "Forgot password?"
+msgstr "Mot de passe oublié ?"
+
+#: templates/base.html:58
+msgid "My account"
+msgstr "Mon compte"
+
+#: templates/base.html:59
+msgid "My identities"
+msgstr "Mes identités"
+
+#: templates/base.html:61
+msgid "Help"
+msgstr "Aide"
+
+#: templates/base.html:79
+msgid "hosted by"
+msgstr "hébergé par"
