@@ -39,13 +39,16 @@
 
 {% if assocs %}
 <p class="association_list_text">Associations mémorisées avec cette identité : </p>
-<form method="post" action="{% url identrevokeassoc userid=ident.userid %}">{% csrf_token %}
 <ul>
-{% for assoc in assocs %}<li>{{ assoc.host }}
-<input type="submit" value="{% trans "Revoke it" %}" name="{{ assoc.host }}" />
-</li>{% endfor %}
-</ul>
+{% for assoc in assocs %}
+<form method="post" action="{% url identrevokeassoc userid=ident.userid %}">{% csrf_token %}
+<li>{{ assoc.host }}
+<input type="hidden" name="host" value="{{ assoc.host }}" />
+<input type="submit" value="{% trans "Revoke it" %}" />
+</li>
 </form>
+{% endfor %}
+</ul>
 {% endif %}
 
 {% endblock content %}

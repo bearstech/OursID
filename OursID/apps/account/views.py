@@ -275,8 +275,9 @@ def ident_revokeassoc(request, userid):
         raise Http404
 
     if request.method == 'POST' and request.POST:
-        for host in request.POST.keys():
-            try :
+        host = request.POST.get('host', None)
+        if host:
+            try:
                 assoc = TrustedConsumers.objects.get(user=request.user, identity__userid=userid, host=host)
             except TrustedConsumers.DoesNotExist:
                 result['error'] = _('No trusted consumer found.')
