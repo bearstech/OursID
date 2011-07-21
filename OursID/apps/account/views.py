@@ -65,7 +65,7 @@ def create(request):
     result = {}
     if request.user.is_authenticated():
         result['error'] = _("You already have an account.")
-        return render_to_response('account/error.html', result)
+        return render_to_response('account/error.html', result, context_instance=RequestContext(request))
     return render_to_response('account/register_ok.html', result, context_instance=RequestContext(request))
 
 def login_form(request):
@@ -280,7 +280,7 @@ def ident_revokeassoc(request, userid):
                 assoc = TrustedConsumers.objects.get(user=request.user, identity__userid=userid, host=host)
             except TrustedConsumers.DoesNotExist:
                 result['error'] = _('No trusted consumer found.')
-                return render_to_response('account/error.html', result)
+                return render_to_response('account/error.html', result, context_instance=RequestContext(request))
             else:
                 assoc.delete()
         return HttpResponseRedirect(reverse('identshow', kwargs={'userid': userid})) # Redirect after POST
